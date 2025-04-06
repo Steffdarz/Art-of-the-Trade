@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Trading - Art of the Trade</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles specific to Web3 hub page */
+        .content-page {
+            padding: 40px 0;
+        }
+        
+        .content-container {
+            background-color: white;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .content-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .content-area h2 {
+            margin: 25px 0 15px;
+            color: #2a4163;
+        }
+        
+        .content-area p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .web3-modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .web3-card {
+            background-color: white;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .web3-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .web3-header {
+            padding: 20px;
+            background-color: #5241a0;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .web3-header i {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        
+        .web3-header h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        
+        .web3-content {
+            padding: 20px;
+        }
+        
+        .web3-features {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        
+        .web3-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f5f5f7;
+        }
+        
+        .web3-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .web3-features i {
+            color: #5241a0;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        
+        .web3-action {
+            margin-top: 15px;
+        }
+        
+        .web3-action .btn {
+            display: inline-block;
+            background-color: #5241a0;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .web3-action .btn:hover {
+            background-color: #624bc0;
+        }
+        
+        .web3-illustration {
+            margin: 30px 0;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .illustration-image {
+            flex: 1;
+            min-width: 300px;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        
+        .illustration-image i {
+            font-size: 64px;
+            color: #5241a0;
+        }
+        
+        .illustration-content {
+            flex: 2;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .illustration-content h3 {
+            color: #2a4163;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .web3-illustration {
+                flex-direction: column;
+            }
+            
+            .illustration-image, .illustration-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Art of the Trade</div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="futures.html">Futures ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-mindset.html">Trading Mindset</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="technical-analysis.html">Technical Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="web3.html">Web3 ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="dex-trading.html">DEX Trading</a></li>
+                            <li><a href="trading-tools.html">Trading Tools</a></li>
+                            <li><a href="web3-strategy.html">Web3 Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h1>Web3 Trading Education</h1>
+                    <p>Comprehensive resources for trading in decentralized finance and cryptocurrency markets</p>
+                </div>
+                
+                <div class="content-area">
+                    <section>
+                        <h2>Mastering the Decentralized Frontier</h2>
+                        <p>Web3 trading represents the cutting edge of financial innovation, offering unprecedented opportunities for traders who understand its unique mechanisms. Unlike traditional finance, Web3 combines 24/7 global markets, programmable finance, and radical transparency through on-chain data.</p>
+                        
+                        <p>Our Web3 trading curriculum provides comprehensive education on decentralized exchanges (DEXs), specialized trading tools, and strategies designed specifically for blockchain-based markets. Whether you're new to Web3 or an experienced trader looking to enhance your skills, our structured learning path will help you navigate this complex ecosystem with confidence.</p>
+                    </section>
+                    
+                    <div class="web3-illustration">
+                        <div class="illustration-image">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="illustration-content">
+                            <h3>Why Master Web3 Trading?</h3>
+                            <ul>
+                                <li>Access to early-stage projects and innovation before mainstream adoption</li>
+                                <li>Ability to earn yield and generate returns through DeFi mechanisms</li>
+                                <li>Trading opportunities 24/7 without intermediaries or gatekeepers</li>
+                                <li>Transparency through on-chain data providing strategic advantages</li>
+                                <li>Development of valuable skills in an emerging financial paradigm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <section>
+                        <h2>Web3 Trading Learning Modules</h2>
+                        <div class="web3-modules">
+                            <div class="web3-card">
+                                <div class="web3-header">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <h3>DEX Trading</h3>
+                                </div>
+                                <div class="web3-content">
+                                    <p>Master the fundamentals of trading on decentralized exchanges, understanding AMMs, liquidity pools, and slippage management.</p>
+                                    <ul class="web3-features">
+                                        <li><i class="fas fa-check"></i> Automated Market Maker (AMM) mechanics</li>
+                                        <li><i class="fas fa-check"></i> Major DEX platforms comparison</li>
+                                        <li><i class="fas fa-check"></i> Managing slippage and price impact</li>
+                                        <li><i class="fas fa-check"></i> Advanced DEX trading techniques</li>
+                                    </ul>
+                                    <div class="web3-action">
+                                        <a href="dex-trading.html" class="btn">Explore DEX Trading</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="web3-card">
+                                <div class="web3-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h3>Trading Tools</h3>
+                                </div>
+                                <div class="web3-content">
+                                    <p>Discover essential tools for Web3 traders, from analytics platforms and portfolio trackers to security solutions and automation tools.</p>
+                                    <ul class="web3-features">
+                                        <li><i class="fas fa-check"></i> On-chain analytics platforms</li>
+                                        <li><i class="fas fa-check"></i> DEX charting and trading tools</li>
+                                        <li><i class="fas fa-check"></i> Portfolio management dashboards</li>
+                                        <li><i class="fas fa-check"></i> Trading bots and automation</li>
+                                    </ul>
+                                    <div class="web3-action">
+                                        <a href="trading-tools.html" class="btn">Discover Trading Tools</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="web3-card">
+                                <div class="web3-header">
+                                    <i class="fas fa-chess"></i>
+                                    <h3>Web3 Strategy</h3>
+                                </div>
+                                <div class="web3-content">
+                                    <p>Learn effective trading strategies specifically designed for Web3 markets, from conservative approaches to high-risk/high-reward techniques.</p>
+                                    <ul class="web3-features">
+                                        <li><i class="fas fa-check"></i> Risk-calibrated strategy portfolio</li>
+                                        <li><i class="fas fa-check"></i> Yield farming and liquidity provision</li>
+                                        <li><i class="fas fa-check"></i> Cross-chain arbitrage opportunities</li>
+                                        <li><i class="fas fa-check"></i> New token launch strategies</li>
+                                    </ul>
+                                    <div class="web3-action">
+                                        <a href="web3-strategy.html" class="btn">Learn Web3 Strategies</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Getting Started with Web3 Trading</h2>
+                        <p>If you're new to Web3 trading, we recommend following this learning path:</p>
+                        
+                        <ol>
+                            <li><strong>Start with DEX Trading fundamentals</strong> to understand the core mechanics of decentralized exchanges</li>
+                            <li><strong>Explore the Trading Tools section</strong> to set up your essential technical infrastructure</li>
+                            <li><strong>Study the Strategy module</strong> beginning with lower-risk approaches before advancing to more complex techniques</li>
+                        </ol>
+                        
+                        <p>For traders with experience in traditional markets or centralized crypto exchanges, the key differences in Web3 trading include:</p>
+                        
+                        <ul>
+                            <li>Self-custody of assets requiring careful wallet management</li>
+                            <li>Direct interaction with smart contracts rather than order books</li>
+                            <li>Gas fees and blockchain transaction considerations</li>
+                            <li>Access to on-chain data providing unique market insights</li>
+                            <li>Different risk profiles due to smart contract security factors</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Art of the Trade. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
