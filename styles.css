@@ -69,6 +69,16 @@ header .container {
     font-weight: bold;
 }
 
+.logo a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.logo a:hover {
+    opacity: 0.9;
+}
+
 .main-nav {
     display: flex;
     list-style: none;
