@@ -1,13 +1,36 @@
-# TradeLearn - Trading Education Website
+# Art of the Trade
 
-A clean, simple educational website focused on trading education with sections for futures trading and Web3 trading.
+A comprehensive educational website focused on cryptocurrency trading, covering futures trading, Web3, technical analysis, trading psychology, and weekly market updates.
 
 ## Features
 
-- Clean, distraction-free design focused on educational content
+- Clean, professional design focused on educational content
+- Comprehensive curriculum covering both technical and psychological aspects of trading
 - Dropdown navigation for easy access to subtopics
 - Responsive design that works on mobile and desktop
+- Weekly Bitcoin market analysis with archives
 - Clearly defined content areas for easy updating
+
+## Site Structure
+
+### Futures Trading Section
+- `futures.html` - Overview of cryptocurrency futures trading
+- `trading-mindset.html` - Psychology, emotional control, and journaling for traders
+- `risk-management.html` - Position sizing, stop losses, and risk-to-reward strategies
+- `technical-analysis.html` - Chart reading, pattern recognition, and indicator usage
+
+### Web3 Trading Section
+- `web3.html` - Introduction to Web3 and decentralized trading
+- `dex-trading.html` - Guide to decentralized exchanges and liquidity pools
+- `trading-tools.html` - Essential tools for cryptocurrency traders
+- `web3-strategy.html` - Trading strategies for Web3 markets
+
+### Market Analysis
+- `market.html` - Weekly Bitcoin market analysis (updated weekly)
+- `market-archives.html` - Archive of previous market updates
+
+### Resources
+- `resources-chart-patterns.html` - Library of chart patterns for technical analysis
 
 ## Deployment Instructions
 
@@ -45,10 +68,19 @@ This site is designed to be easy to update without coding knowledge:
    - `<ul><li>List item</li></ul>` - For bullet lists
    - `<a href="url">Link text</a>` - For links
 
+## Updating Weekly Market Analysis
+
+To update the weekly market analysis:
+
+1. Save the current `market.html` content as `market-YYYYMMDD.html` (e.g., `market-20250406.html`)
+2. Add the new date file to the archives list in `market-archives.html` with a brief description
+3. Update `market.html` with your new analysis for the current week
+4. Change the date and update all relevant content sections
+
 ## Creating New Pages
 
 1. Copy the `page-template.html` file
-2. Rename it to your desired page name (e.g., `psychology.html`)
+2. Rename it to your desired page name (e.g., `new-topic.html`)
 3. Update the PAGE_TITLE and PAGE_DESCRIPTION placeholders
 4. Add your content between the content area comments
 5. Link to your new page from the appropriate menu item
@@ -59,7 +91,7 @@ This site is designed to be easy to update without coding knowledge:
 - `styles.css` - Main stylesheet
 - `script.js` - JavaScript functionality
 - `page-template.html` - Template for creating new content pages
-- Various content pages (psychology.html, risk-management.html, etc.)
+- Various content pages (futures.html, trading-mindset.html, etc.)
 
 ## Customization
 
