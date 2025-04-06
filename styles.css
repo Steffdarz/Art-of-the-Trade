@@ -9,6 +9,28 @@
     --white: #fff;
 }
 
+/* Adding styles for About Me section */
+.about-me {
+    margin: 30px 0;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    padding: 25px;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
 * {
     margin: 0;
     padding: 0;
