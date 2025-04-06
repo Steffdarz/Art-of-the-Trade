@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Updates Archive - Art of the Trade</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles specific to archives page */
+        .content-page {
+            padding: 40px 0;
+        }
+        
+        .content-container {
+            background-color: white;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .content-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .content-area h2 {
+            margin: 25px 0 15px;
+            color: #2a4163;
+        }
+        
+        .content-area p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .back-to-current {
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .back-to-current a {
+            display: inline-flex;
+            align-items: center;
+            color: #2a4163;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .back-to-current a:hover {
+            color: #5241a0;
+        }
+        
+        .back-to-current i {
+            margin-right: 8px;
+        }
+        
+        .archive-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .archive-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            transition: background-color 0.3s;
+        }
+        
+        .archive-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .archive-item a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .archive-date {
+            display: flex;
+            align-items: center;
+        }
+        
+        .archive-date i {
+            margin-right: 10px;
+            color: #2a4163;
+        }
+        
+        .archive-title {
+            flex: 1;
+            margin-left: 20px;
+        }
+        
+        .archive-arrow {
+            color: #2a4163;
+        }
+        
+        .year-divider {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            margin: 20px 0 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #2a4163;
+        }
+        
+        .no-archives {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .no-archives i {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Art of the Trade</div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="futures.html">Futures ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-mindset.html">Trading Mindset</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="technical-analysis.html">Technical Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="web3.html">Web3 ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="dex-trading.html">DEX Trading</a></li>
+                            <li><a href="trading-tools.html">Trading Tools</a></li>
+                            <li><a href="web3-strategy.html">Web3 Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h1>Market Updates Archive</h1>
+                    <p>Access all previous Bitcoin market analysis reports</p>
+                </div>
+                
+                <div class="content-area">
+                    <div class="back-to-current">
+                        <a href="market.html"><i class="fas fa-arrow-left"></i> Back to Current Market Overview</a>
+                    </div>
+                    
+                    <section>
+                        <h2>Previous Market Updates</h2>
+                        <p>Browse our archive of Bitcoin market analysis reports. Each report provides a comprehensive overview of market conditions, technical analysis, and trading opportunities for the specified week.</p>
+                        
+                        <div class="year-divider">2025</div>
+                        
+                        <ul class="archive-list">
+                            <li class="archive-item">
+                                <a href="market-20250406.html">
+                                    <div class="archive-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        April 6, 2025
+                                    </div>
+                                    <div class="archive-title">
+                                        Bitcoin consolidates around $85,000 after new ATH
+                                    </div>
+                                    <div class="archive-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="archive-item">
+                                <a href="market-20250330.html">
+                                    <div class="archive-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        March 30, 2025
+                                    </div>
+                                    <div class="archive-title">
+                                        Bitcoin breaks $85,000 as halving effects take hold
+                                    </div>
+                                    <div class="archive-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="archive-item">
+                                <a href="market-20250323.html">
+                                    <div class="archive-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        March 23, 2025
+                                    </div>
+                                    <div class="archive-title">
+                                        Pre-halving momentum builds as Bitcoin approaches $80,000
+                                    </div>
+                                    <div class="archive-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Template for when you have no archives yet -->
+                        <!--
+                        <div class="no-archives">
+                            <i class="far fa-folder-open"></i>
+                            <h3>No archived reports yet</h3>
+                            <p>Previous market updates will appear here once they are archived.</p>
+                        </div>
+                        -->
+                        
+                        <!-- Template for adding more years -->
+                        <!--
+                        <div class="year-divider">2024</div>
+                        
+                        <ul class="archive-list">
+                            <li class="archive-item">
+                                <a href="market-20241229.html">
+                                    <div class="archive-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        December 29, 2024
+                                    </div>
+                                    <div class="archive-title">
+                                        Year-end rally pushes Bitcoin to new yearly high
+                                    </div>
+                                    <div class="archive-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        -->
+                    </section>
+                    
+                    <section>
+                        <h2>How to Use the Archives</h2>
+                        <p>Our market archives provide several benefits for traders and analysts:</p>
+                        
+                        <ul>
+                            <li><strong>Track Analysis Accuracy:</strong> Compare our previous market outlooks with actual outcomes to assess analytical accuracy</li>
+                            <li><strong>Study Market Cycles:</strong> Review how market sentiment and technical patterns evolved throughout different phases</li>
+                            <li><strong>Research Specific Periods:</strong> Find detailed analysis for particular market events or price movements</li>
+                            <li><strong>Improve Your Trading:</strong> Learn from historical setups and outcomes to enhance your own trading decisions</li>
+                        </ul>
+                        
+                        <p>We maintain these archives as both a record of our analysis and an educational resource for understanding Bitcoin's market evolution.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Art of the Trade. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
