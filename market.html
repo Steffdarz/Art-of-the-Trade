@@ -136,7 +136,6 @@
         }
         
         .chart-image {
-            height: 400px;
             background-color: #eee;
             display: flex;
             justify-content: center;
@@ -250,6 +249,32 @@
             border-radius: 5px;
             margin-top: 30px;
         }
+
+        .no-bueno {
+            text-align: center; 
+            font-style: italic; 
+            color: #dc3545; 
+            font-weight: bold; 
+            margin-top: 10px;
+        }
+
+        .price-stats-container {
+            margin: 20px 0;
+        }
+
+        .section-divider {
+            height: 1px;
+            background-color: #eee;
+            margin: 40px 0;
+        }
+
+        .key-points {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #2a4163;
+        }
     </style>
 </head>
 <body>
@@ -303,10 +328,40 @@
                     
                     <div class="market-summary">
                         <h3>This Week's Market Summary</h3>
-                        <p>GM Lads, How is everyone enjoying the bear market so far? Jk, I don’t even see things as a bull or bear market anymore now, the market shifts, there’s only short term selling opportunity, short term buying opportunity, and I’ll abide by it. 
-                        We've seen NASDAQ, S&P, and some of the MAG 7 sell off, with the dollar surging – all because of the Trump tariffs, which seems to be the main sticking point. Global markets ended the week under pressure with a level of heightened volatility. If you look at the VIX, if you look at the move index, this is all causing a level of rising macro uncertainty. There are multiple risks converging as we head into next week.</p>
+                        <p>GM Lads, How is everyone enjoying the bear market so far? Jk, I don't even see things as a bull or bear market anymore now, the market shifts, there's only short term selling opportunity, short term buying opportunity, and I'll abide by it.</p>
+                        
+                        <p>We've seen NASDAQ, S&P, and some of the MAG 7 sell off, with the dollar surging – all because of the Trump tariffs, which seems to be the main sticking point. Global markets ended the week under pressure with a level of heightened volatility. If you look at the VIX, if you look at the move index, this is all causing a level of rising macro uncertainty. There are multiple risks converging as we head into next week.</p>
                         
                         <p>Objectively, markets perform well when the level of uncertainty is relatively low, but when you have a wide probable array of uncertainties, it causes a level of uneasiness in the market. There are too many moving parts to even think about a sustained rally. Yes, you're going to get mechanical rotations and oscillations – I'm not saying we're just going to go straight down from here.</p>
+                    </div>
+                    
+                    <!-- Bitcoin Price Stats Section -->
+                    <div class="price-stats-container">
+                        <div class="price-stats">
+                            <div class="price-stat">
+                                <div class="price-label">Current Price</div>
+                                <div class="price-value">$78,860.26</div>
+                                <div class="price-change positive-change">+0.71% (24h)</div>
+                            </div>
+                            
+                            <div class="price-stat">
+                                <div class="price-label">Weekly Range</div>
+                                <div class="price-value">$74,389 - $86,213</div>
+                                <div class="price-change">Volatility: High</div>
+                            </div>
+                            
+                            <div class="price-stat">
+                                <div class="price-label">All-Time High</div>
+                                <div class="price-value">$104,500</div>
+                                <div class="price-change negative-change">-24.5% from ATH</div>
+                            </div>
+                            
+                            <div class="price-stat">
+                                <div class="price-label">Trading Volume</div>
+                                <div class="price-value">1.92K BTC</div>
+                                <div class="price-change neutral">Moderate</div>
+                            </div>
+                        </div>
                     </div>
                     
                     <section>
@@ -316,7 +371,7 @@
                             <div class="chart-image" style="background-color: white; height: auto; overflow: hidden;">
                                 <img src="https://raw.githubusercontent.com/Steffdarz/Art-of-the-Trade/refs/heads/main/BTC%208%20April%202025.png" alt="Bitcoin price chart showing decline from ATH" style="width: 100%; height: auto;">
                             </div>
-                            <div style="text-align: center; font-style: italic; color: #dc3545; font-weight: bold; margin-top: 10px;">No Bueno</div>
+                            <div class="no-bueno">No Bueno</div>
                         </div>
                         
                         <p>Well, would you look at that?</p>
@@ -325,8 +380,19 @@
                         
                         <p>What I expect however, is a small retest on the mid-range, possibly around $79k-$82k, and it could roll down back, not to range low, but $70k level (circled). Why $70k you ask? It is the origin of the uptrend we see back in October - November 2024.</p>
                         
-                        <p>I would do my business with size on the following area. Long $69k - $73k OR if we get the move up first, Short $80k - $82k. Other than thos eposition, I'd do some minor scalp depend on reaction to some key levels.</p>
-                 
+                        <div class="key-points">
+                            <h3>Key Trading Levels</h3>
+                            <p>I would do my business with size on the following area:</p>
+                            <ul>
+                                <li><strong>Long Zone:</strong> $69k - $73k</li>
+                                <li><strong>Short Zone:</strong> $80k - $82k (if we get the move up first)</li>
+                            </ul>
+                            <p>Other than those positions, I'd do some minor scalps depending on reaction to key levels.</p>
+                        </div>
+                    </section>
+                    
+                    <div class="section-divider"></div>
+                    
                     <section>
                         <h2>Macro Analysis</h2>
                         
@@ -343,19 +409,22 @@
                         <p>These macro factors collectively suggest we may see continued volatility before any clear direction is established. Markets traditionally perform poorly during periods of high uncertainty, which is what we're experiencing now.</p>
                     </section>
                     
+                    <div class="section-divider"></div>
+                    
                     <section>
                         <h2>Market Outlook and Trading Opportunities</h2>
                         
                         <p>In terms of the calendar, we also have a level of uncertainty because on Wednesday we've got the FOMC meeting, and on Thursday we have CPI data. All in all, we have a lot of data points, so you really have to navigate this week very carefully.</p>
                         
-                        <h3>Trading Strategy:</h3>
-                        <ul>
-                            <li>Keep trades very short-term; avoid swing positions heading into FOMC and CPI</li>
-                            <li>For potential shorts, look for rejection at the 82.5K resistance level</li>
-                            <li>Reduce risk significantly due to expected volatility</li>
-                            <li>Be very selective and avoid overtrading in this uncertain environment</li>
-                        </ul>
-                        
+                        <div class="key-points">
+                            <h3>Trading Strategy:</h3>
+                            <ul>
+                                <li>Keep trades very short-term; avoid swing positions heading into FOMC and CPI</li>
+                                <li>For potential shorts, look for rejection at the 82.5K resistance level</li>
+                                <li>Reduce risk significantly due to expected volatility</li>
+                                <li>Be very selective and avoid overtrading in this uncertain environment</li>
+                            </ul>
+                        </div>
                     </section>
                     
                     <div class="next-update">
