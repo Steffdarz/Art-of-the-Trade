@@ -48,36 +48,155 @@
             line-height: 1.8;
         }
         
-        .strength-item, .weakness-item {
-            margin-bottom: 25px;
+        .journal-entry {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-left: 4px solid var(--primary-color);
         }
         
-        .strength-item h4, .weakness-item h4 {
+        .entry-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .entry-date {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .entry-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+            color: var(--light-text);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .meta-item strong {
+            margin-right: 5px;
+        }
+        
+        .entry-content h3 {
+            color: var(--primary-color);
+            margin: 20px 0 10px;
+            font-size: 18px;
+        }
+        
+        .entry-content ul {
+            margin-bottom: 15px;
+        }
+        
+        .trade-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .trade-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .trade-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .trade-table tr:nth-child(even) {
+            background-color: rgba(42, 65, 99, 0.05);
+        }
+        
+        .profit {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .loss {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .key-section {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+        }
+        
+        .key-section h4 {
             margin-bottom: 10px;
             color: var(--primary-color);
         }
         
-        .strength-item {
-            background-color: rgba(40, 167, 69, 0.1);
-            border-left: 3px solid #28a745;
+        .summary-box {
+            background-color: rgba(42, 65, 99, 0.1);
             padding: 15px;
             border-radius: 5px;
+            margin-top: 20px;
         }
         
-        .weakness-item {
-            background-color: rgba(220, 53, 69, 0.1);
-            border-left: 3px solid #dc3545;
-            padding: 15px;
+        .summary-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .stat-item {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            padding: 10px;
+            background-color: white;
             border-radius: 5px;
+            border: 1px solid #e5e5e5;
         }
         
-        .solution {
-            margin-top: 10px;
+        .stat-label {
+            font-size: 12px;
+            color: var(--light-text);
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 18px;
             font-weight: bold;
+            color: var(--primary-color);
         }
         
-        .solution span {
-            font-weight: normal;
+        .reflection {
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        .loading-message {
+            text-align: center;
+            padding: 30px;
+            color: var(--light-text);
+        }
+        
+        .no-entries {
+            text-align: center;
+            padding: 30px;
+            color: var(--light-text);
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -130,10 +249,12 @@
                 </div>
                 
                 <div class="content-area">
-                    <!-- Strengths -->
-                    <section class="journal-section">
-                        <h2>TBD</h2>
-                    </section>
+                    <div id="journal-entries" class="journal-content">
+                        <div class="loading-message">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Loading journal entries...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,6 +272,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="journal.js"></script>
 </body>
 </html>
