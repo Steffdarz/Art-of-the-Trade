@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "date": "April 9, 2025",
+      "trader": "Alex Johnson",
+      "market": "E-mini S&P 500 Futures (ES)",
+      "session": "U.S. Market Open (9:30 AM – 11:30 AM ET)",
+      "marketContext": [
+        {
+          "text": "Pre-Market Outlook:",
+          "subitems": [
+            "Overnight session showed bullish strength following lower-than-expected CPI data.",
+            "Levels noted: Resistance: 4650, Support: 4605, 4580"
+          ]
+        },
+        {
+          "text": "Market Conditions During Session:",
+          "subitems": [
+            "Moderate volatility with strong upward bias during first hour, then consolidating.",
+            "Clear bullish sentiment observed; buyers consistently stepping in near intraday support at 4620."
+          ]
+        }
+      ],
+      "trades": [
+        {
+          "number": "1",
+          "time": "9:35 AM",
+          "entry": "4615",
+          "direction": "Long",
+          "size": "2",
+          "exit": "4627",
+          "pnl": "+$1,200",
+          "notes": "Strong momentum breakout, exited at target"
+        },
+        {
+          "number": "2",
+          "time": "10:05 AM",
+          "entry": "4632",
+          "direction": "Short",
+          "size": "2",
+          "exit": "4638",
+          "pnl": "-$600",
+          "notes": "Attempted reversal too early"
+        },
+        {
+          "number": "3",
+          "time": "10:45 AM",
+          "entry": "4625",
+          "direction": "Long",
+          "size": "3",
+          "exit": "4637",
+          "pnl": "+$1,800",
+          "notes": "Bought at retest of intraday support"
+        }
+      ],
+      "workedWell": [
+        "Clear identification of bullish market sentiment from pre-market data.",
+        "Good patience and discipline on trades 1 and 3, waiting for proper entry signals."
+      ],
+      "improvement": [
+        "Trade #2 was premature; reversal patterns need stronger confirmation, such as clear rejection candles or volume spikes.",
+        "Consider adjusting stop-loss placement to minimize losses on counter-trend trades."
+      ],
+      "emotional": [
+        "Remained composed and patient despite initial winning trade.",
+        "Experienced slight anxiety on losing trade but recovered quickly with proper breathing techniques.",
+        "Maintained focus on risk management and did not exceed predetermined daily risk limit."
+      ],
+      "adjustments": [
+        "Revisit rules for counter-trend trades to improve entry precision.",
+        "Continue practicing mindful breathing during periods of uncertainty or drawdown.",
+        "Review higher timeframe trends (4-hour, daily) more thoroughly before attempting intraday reversals."
+      ],
+      "summary": {
+        "totalTrades": "3",
+        "winners": "2",
+        "losers": "1",
+        "winRate": "66.7%",
+        "netPnL": "+$2,400"
+      },
+      "reflection": "Overall, good adherence to strategy and risk management. Need to improve timing and criteria for reversal setups. Feeling confident and positive moving forward."
+    }
+  ]
+}
