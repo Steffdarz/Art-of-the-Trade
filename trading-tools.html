@@ -107,26 +107,28 @@
             color: white;
         }
         
-        .tool-subscription {
-            margin-top: 15px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            color: #666;
+        .tool-action {
+            margin-top: 20px;
+            text-align: center;
         }
         
-        .free-tag {
-            color: #28a745;
+        .tool-action .btn {
+            display: inline-block;
+            background-color: #5241a0;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
             font-weight: bold;
+            transition: all 0.3s ease;
+            width: 100%;
         }
         
-        .paid-tag {
-            color: #dc3545;
-        }
-        
-        .premium-tag {
-            color: #ffc107;
-            font-weight: bold;
+        .tool-action .btn:hover {
+            background-color: #624bc0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         }
         
         .tool-screenshot {
@@ -144,6 +146,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 3px;
+            transition: transform 0.3s ease;
+        }
+        
+        .tool-card:hover .tool-screenshot img {
+            transform: scale(1.03);
         }
         
         .tool-screenshot i {
@@ -240,7 +248,7 @@
                                 <h3>GMGN <span class="tool-category">Trading Terminal</span></h3>
                                 <p>A comprehensive trading terminal focused on token discovery and real-time market monitoring with integrated MEV protection.</p>
                                 <div class="tool-screenshot">
-                                    <i class="fas fa-desktop"></i>
+                                    <img src="images/gmgn-screenshot.jpg" alt="GMGN Trading Terminal">
                                 </div>
                                 <div class="key-features">
                                     <h4>Key Features:</h4>
@@ -252,9 +260,8 @@
                                         <li>MEV protection for safer trades</li>
                                     </ul>
                                 </div>
-                                <div class="tool-subscription">
-                                    <span>Basic: <span class="free-tag">Free</span></span>
-                                    <span>Premium: <span class="paid-tag">Subscription</span></span>
+                                <div class="tool-action">
+                                    <a href="https://gmgn.ai" target="_blank" class="btn">Visit GMGN</a>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +274,7 @@
                                 <h3>Pulse <span class="tool-category">Trading Interface</span></h3>
                                 <p>Advanced trading interface that focuses on new token pairs and market opportunities with integrated trading capabilities.</p>
                                 <div class="tool-screenshot">
-                                    <i class="fas fa-desktop"></i>
+                                    <img src="images/pulse-screenshot.jpg" alt="Pulse Trading Interface">
                                 </div>
                                 <div class="key-features">
                                     <h4>Key Features:</h4>
@@ -279,9 +286,8 @@
                                         <li>Visual display of trading activity and market sentiment</li>
                                     </ul>
                                 </div>
-                                <div class="tool-subscription">
-                                    <span>Basic: <span class="free-tag">Free</span></span>
-                                    <span>Premium: <span class="paid-tag">Subscription</span></span>
+                                <div class="tool-action">
+                                    <a href="https://pulsetrading.app" target="_blank" class="btn">Visit Pulse</a>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +300,7 @@
                                 <h3>Axiom <span class="tool-category">Market Analytics</span></h3>
                                 <p>Token analytics platform that provides in-depth market data and trader insights through intuitive visualizations and metrics.</p>
                                 <div class="tool-screenshot">
-                                    <i class="fas fa-desktop"></i>
+                                    <img src="images/axiom-screenshot.jpg" alt="Axiom Market Analytics">
                                 </div>
                                 <div class="key-features">
                                     <h4>Key Features:</h4>
@@ -306,9 +312,8 @@
                                         <li>Support for multiple exchanges and DEXs</li>
                                     </ul>
                                 </div>
-                                <div class="tool-subscription">
-                                    <span>Basic: <span class="free-tag">Free</span></span>
-                                    <span>Premium: <span class="paid-tag">Paid</span></span>
+                                <div class="tool-action">
+                                    <a href="https://axiom.markets" target="_blank" class="btn">Visit Axiom</a>
                                 </div>
                             </div>
                         </div>
@@ -358,6 +363,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="navigation-update.js"></script>
 </body>
 </html>
