@@ -1,84 +1,106 @@
 {
   "entries": [
     {
-      "date": "April 9, 2025",
-      "trader": "Alex Johnson",
-      "market": "E-mini S&P 500 Futures (ES)",
-      "session": "U.S. Market Open (9:30 AM – 11:30 AM ET)",
+      "date": "April 8~9, 2025",
+      "market": "ETH, XRP, Fartcoin",
       "marketContext": [
         {
           "text": "Pre-Market Outlook:",
           "subitems": [
-            "Overnight session showed bullish strength following lower-than-expected CPI data.",
-            "Levels noted: Resistance: 4650, Support: 4605, 4580"
+            "BTC approaching mid-level as planned, i'm watching it closely for a rejection/deviation from the level.",
+            "Levels noted: 80,000~82,000"
           ]
         },
         {
-          "text": "Market Conditions During Session:",
+          "text": "Market Conditions on NY Open:",
           "subitems": [
-            "Moderate volatility with strong upward bias during first hour, then consolidating.",
-            "Clear bullish sentiment observed; buyers consistently stepping in near intraday support at 4620."
+            "Price halted on NY Open.",
+            "This tell me that the market are cautious, a good sign that it will follow through the trend."
           ]
         }
       ],
       "trades": [
         {
           "number": "1",
-          "time": "9:35 AM",
-          "entry": "4615",
-          "direction": "Long",
-          "size": "2",
-          "exit": "4627",
-          "pnl": "+$1,200",
-          "notes": "Strong momentum breakout, exited at target"
+          "asset": "ETH",
+          "time": "8 April 9:43 PM",
+          "entry": "1554",
+          "direction": "Short",
+          "size": "1",
+          "exit": "1532",
+          "R": "0.5",
+          "notes": "Scalp short, ETH is one of the weaker asset."
         },
         {
           "number": "2",
-          "time": "10:05 AM",
-          "entry": "4632",
+          "asset": "XRP",
+          "time": "9 April 00:05 AM",
+          "entry": "1.8389",
           "direction": "Short",
-          "size": "2",
-          "exit": "4638",
-          "pnl": "-$600",
-          "notes": "Attempted reversal too early"
+          "size": "1",
+          "exit": "1.8208",
+          "R": "0.25",
+          "notes": "Missed my entry on Bitcoin, XRP has been a good BTC beta, I'll squeeze this instead."
         },
         {
-          "number": "3",
-          "time": "10:45 AM",
-          "entry": "4625",
-          "direction": "Long",
-          "size": "3",
-          "exit": "4637",
-          "pnl": "+$1,800",
-          "notes": "Bought at retest of intraday support"
+         "number": "3",
+          "asset": "XRP",
+          "time": "9 April 00:42 AM",
+          "entry": "1.8580",
+          "direction": "Short",
+          "size": "1",
+          "exit": "1.8479",
+          "R": "0.1",
+          "notes": "Lots of uncertainty, I'm closing my previous XRP short for a small profit, and re-entered higher."
+        }
+         {
+         "number": "4",
+          "asset": "XRP",
+          "time": "9 April 00:58 AM",
+          "entry": "1.8537",
+          "direction": "Short",
+          "size": "2",
+          "exit": "1.7672",
+          "R": "0.75",
+          "notes": "Now this is the cream of the move, closed my earlier trade again for small profit, the moment I sensed a big move coming, I scaled in back with double size."
+        }
+         {
+         "number": "5",
+          "asset": "XRP",
+          "time": "9 April 09:45 AM",
+          "entry": "1.7746",
+          "direction": "Short",
+          "size": "1",
+          "exit": "1.7535",
+          "R": "0.15",
+          "notes": "Woke up in the morning, closing my big size trade, saw an opportunity to squeeze it a bit further as a scalp."
         }
       ],
       "workedWell": [
-        "Clear identification of bullish market sentiment from pre-market data.",
-        "Good patience and discipline on trades 1 and 3, waiting for proper entry signals."
+        "Clear identification of market sentiment from both pre-market and social sentiment.",
+        "Identified the weaker asset among the others to short.",
+        "A very close clutch for trade 3, almost missed the big move."
       ],
       "improvement": [
-        "Trade #2 was premature; reversal patterns need stronger confirmation, such as clear rejection candles or volume spikes.",
-        "Consider adjusting stop-loss placement to minimize losses on counter-trend trades."
+        "I missed my plan for BTC which worked PERFECTLY.",
+        "Consider watching less asset."
       ],
       "emotional": [
-        "Remained composed and patient despite initial winning trade.",
-        "Experienced slight anxiety on losing trade but recovered quickly with proper breathing techniques.",
-        "Maintained focus on risk management and did not exceed predetermined daily risk limit."
+        "Sleepless night combined with plenty of market related news/fear.",
+        "Lots of scalp due to lack of confidence in my set up.",
+        "Still managed to decide on finally drilling the nail on the coffin before sleeping."
       ],
       "adjustments": [
-        "Revisit rules for counter-trend trades to improve entry precision.",
-        "Continue practicing mindful breathing during periods of uncertainty or drawdown.",
-        "Review higher timeframe trends (4-hour, daily) more thoroughly before attempting intraday reversals."
+        "LESS SOCIAL, focus only the few notification I set."
       ],
       "summary": {
-        "totalTrades": "3",
-        "winners": "2",
-        "losers": "1",
-        "winRate": "66.7%",
-        "netPnL": "+$2,400"
+        "totalTrades": "5",
+        "winners": "5",
+        "losers": "0",
+        "winRate": "100%",
+        "netR": "+1.75R"
       },
-      "reflection": "Overall, good adherence to strategy and risk management. Need to improve timing and criteria for reversal setups. Feeling confident and positive moving forward."
+      "reflection": "Overall, it's a good trading day with some hiccup."
     }
   ]
 }
