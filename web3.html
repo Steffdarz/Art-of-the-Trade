@@ -36,16 +36,13 @@
             line-height: 1.7;
         }
         
-        /* Fix for link styling */
-        .content-area a {
-            color: #5241a0;
+        /* Fix ONLY for links inside the getting-started section */
+        .getting-started a {
+            color: #0066cc !important; /* Standard blue color */
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
         }
         
-        .content-area a:hover {
-            color: #624bc0;
+        .getting-started a:hover {
             text-decoration: underline;
         }
         
@@ -239,7 +236,7 @@
                         <p>In futures trading, you're advised to limit the number of trades you take per day. However, on-chain trading is the one instance where locking in, scouring trending news, and spending extra time at your terminal and on social media can genuinely pay off.</p>
                     </section>
                     
-                    <section>
+                    <section class="getting-started">
                         <h2>Getting Started</h2>
                         <p>If you're new to on-chain trading, here's what you need to know:</p>
                         
