@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the container where journal entries will be displayed
     const journalContainer = document.getElementById('journal-entries');
     
-    // Function to format P&L values with color coding
-    function formatPnL(value) {
-        const numValue = parseFloat(value.replace(/[^0-9.-]+/g, ""));
+    // Function to format R values with color coding
+    function formatR(value) {
+        const numValue = parseFloat(value);
         if (numValue > 0) {
-            return `<span class="profit">${value}</span>`;
+            return `<span class="profit">+${value}R</span>`;
         } else if (numValue < 0) {
-            return `<span class="loss">${value}</span>`;
+            return `<span class="loss">${value}R</span>`;
         }
         return value;
     }
@@ -29,12 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <thead>
                     <tr>
                         <th>Trade #</th>
+                        <th>Asset</th>
                         <th>Time</th>
                         <th>Entry</th>
                         <th>Direction</th>
                         <th>Size</th>
                         <th>Exit</th>
-                        <th>P&L</th>
+                        <th>R</th>
                         <th>Notes</th>
                     </tr>
                 </thead>
@@ -45,12 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
             tableHTML += `
                 <tr>
                     <td>${trade.number}</td>
+                    <td>${trade.asset}</td>
                     <td>${trade.time}</td>
                     <td>${trade.entry}</td>
                     <td>${trade.direction}</td>
                     <td>${trade.size}</td>
                     <td>${trade.exit}</td>
-                    <td>${formatPnL(trade.pnl)}</td>
+                    <td>${formatR(trade.R)}</td>
                     <td>${trade.notes}</td>
                 </tr>
             `;
@@ -94,13 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="entry-date">Trading Journal - ${entry.date}</div>
                     <div class="entry-meta">
                         <div class="meta-item">
-                            <strong>Trader Name:</strong> ${entry.trader}
-                        </div>
-                        <div class="meta-item">
                             <strong>Market Focus:</strong> ${entry.market}
-                        </div>
-                        <div class="meta-item">
-                            <strong>Trading Session:</strong> ${entry.session}
                         </div>
                     </div>
                 </div>
@@ -148,9 +144,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
                             
                             <div class="stat-item">
-                                <div class="stat-label">Net P&L</div>
-                                <div class="stat-value ${entry.summary.netPnL.includes('-') ? 'loss' : 'profit'}">
-                                    ${entry.summary.netPnL}
+                                <div class="stat-label">Net R</div>
+                                <div class="stat-value ${entry.summary.netR.includes('-') ? 'loss' : 'profit'}">
+                                    ${entry.summary.netR}
                                 </div>
                             </div>
                         </div>
@@ -180,9 +176,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.entries && data.entries.length > 0) {
                 // Sort entries by date (newest first)
                 data.entries.sort((a, b) => {
-                    const dateA = new Date(a.date);
-                    const dateB = new Date(b.date);
-                    return dateB - dateA;
+                    // Use a simple string comparison for dates like "April 8~9, 2025"
+                    return b.date.localeCompare(a.date);
                 });
                 
                 // Render each entry
@@ -207,6 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <i class="fas fa-exclamation-circle"></i>
                     <h3>Error Loading Journal</h3>
                     <p>There was a problem loading the journal entries. Please try again later.</p>
+                    <p>Error details: ${error.message}</p>
                 </div>
             `;
         });
