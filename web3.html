@@ -36,6 +36,19 @@
             line-height: 1.7;
         }
         
+        /* Fix for link styling */
+        .content-area a {
+            color: #5241a0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .content-area a:hover {
+            color: #624bc0;
+            text-decoration: underline;
+        }
+        
         .web3-modules {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -232,10 +245,68 @@
                         
                         <ol>
                             <li><strong>Determine which chain you're going to trade in:</strong> More participant in a chain, more liquidity it will have. Currently Solana and BNB is a very popular choice.</li>
-                            <li><a href="trading-tools.html"><strong>Tools and terminal:</strong></a> While it's possible to trade direcly on your wallet, it is recommended to trade with terminals or bots. Most terminal comes with MEV protection and their own set of useful tools.</li>
-                            <li><strong>On-chain trading is a social game:</strong>Good tech without strong social presence will struggle with mindshare, conversely a meme coin without any use-case can easily gain traction if it got notice by many peoples, and especially if it was mentioned by a prominent figure.</li>
+                            <li><strong><a href="trading-tools.html">Tools and terminal:</a></strong> While it's possible to trade directly on your wallet, it is recommended to trade with terminals or bots. Most terminal comes with MEV protection and their own set of useful tools.</li>
+                            <li><strong>On-chain trading is a social game:</strong> Good tech without strong social presence will struggle with mindshare, conversely a meme coin without any use-case can easily gain traction if it got notice by many peoples, and especially if it was mentioned by a prominent figure.</li>
                         </ol>
-                        
+                    </section>
+                    
+                    <section>
+                        <h2>Web3 Trading Categories</h2>
+                        <div class="web3-modules">
+                            <div class="web3-card">
+                                <div class="web3-header">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <h3>DEX Trading</h3>
+                                </div>
+                                <div class="web3-content">
+                                    <p>Master the fundamentals of decentralized exchanges, liquidity pools, and token swapping.</p>
+                                    <ul class="web3-features">
+                                        <li><i class="fas fa-check-circle"></i> Understand AMM mechanics</li>
+                                        <li><i class="fas fa-check-circle"></i> Learn slippage management</li>
+                                        <li><i class="fas fa-check-circle"></i> Optimize gas costs</li>
+                                    </ul>
+                                    <div class="web3-action">
+                                        <a href="dex-trading.html" class="btn">Explore DEX Trading</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="web3-card">
+                                <div class="web3-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h3>Trading Tools</h3>
+                                </div>
+                                <div class="web3-content">
+                                    <p>Essential tools and platforms for effective on-chain trading and analysis.</p>
+                                    <ul class="web3-features">
+                                        <li><i class="fas fa-check-circle"></i> Portfolio trackers</li>
+                                        <li><i class="fas fa-check-circle"></i> On-chain analytics</li>
+                                        <li><i class="fas fa-check-circle"></i> Trading terminals</li>
+                                    </ul>
+                                    <div class="web3-action">
+                                        <a href="trading-tools.html" class="btn">Discover Trading Tools</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="web3-card">
+                                <div class="web3-header">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h3>Web3 Strategy</h3>
+                                </div>
+                                <div class="web3-content">
+                                    <p>Develop effective strategies for finding and capitalizing on Web3 opportunities.</p>
+                                    <ul class="web3-features">
+                                        <li><i class="fas fa-check-circle"></i> Risk management</li>
+                                        <li><i class="fas fa-check-circle"></i> Alpha-seeking methods</li>
+                                        <li><i class="fas fa-check-circle"></i> Portfolio construction</li>
+                                    </ul>
+                                    <div class="web3-action">
+                                        <a href="web3-strategy.html" class="btn">Learn Web3 Strategy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
