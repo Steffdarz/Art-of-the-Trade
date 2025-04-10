@@ -73,13 +73,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            // Update Resources to have dropdown
+            // Update Resources to have dropdown without redirect
             if (linkText.includes('Resources')) {
                 // First, add the dropdown class to the li if it doesn't have it
                 item.classList.add('has-dropdown');
                 
                 // Get the link element
                 const link = item.querySelector('a');
+                
+                // Update the href to prevent navigation
+                link.setAttribute('href', 'javascript:void(0);');
                 
                 // Update the text to include the dropdown indicator
                 if (!link.textContent.includes('▾')) {
@@ -100,6 +103,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 dropdown.innerHTML = `
                     <li><a href="resources-chart-patterns.html">Chart Patterns</a></li>
                 `;
+                
+                // Add click event handler for Resources
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const dropdown = item.querySelector('.dropdown');
+                    if (dropdown) {
+                        // Toggle dropdown visibility
+                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
             }
         });
     }
