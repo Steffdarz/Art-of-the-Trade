@@ -131,12 +131,19 @@
         
         .tool-screenshot {
             margin-top: 15px;
-            height: 150px;
-            background-color: #eee;
+            height: 200px;
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .tool-screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .tool-screenshot i {
@@ -144,59 +151,25 @@
             color: #5241a0;
         }
         
-        .category-filter {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 30px;
+        .key-features {
+            margin-top: 15px;
         }
         
-        .category-btn {
-            padding: 8px 15px;
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
+        .key-features h4 {
+            font-size: 16px;
+            color: #2a4163;
+            margin-bottom: 10px;
         }
         
-        .category-btn:hover, .category-btn.active {
-            background-color: #5241a0;
-            color: white;
-            border-color: #5241a0;
+        .key-features ul {
+            padding-left: 20px;
         }
         
-        .next-steps {
-            background-color: rgba(82, 65, 160, 0.1);
-            padding: 30px;
-            border-radius: 5px;
-            margin-top: 40px;
-        }
-        
-        .next-steps h2 {
-            margin-bottom: 15px;
-        }
-        
-        .button-group {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: #5241a0;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 14px;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: #624bc0;
+        .warning-box {
+            background-color: rgba(255, 99, 71, 0.1);
+            border-left: 4px solid tomato;
+            padding: 15px;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -205,34 +178,38 @@
         <div class="container">
             <div class="logo"><a href="index.html">Art of the Trade</a></div>
             <nav>
-    <ul class="main-nav">
-          <li class="has-dropdown">
-            <a href="#">Manual & Journal ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-manual.html">Trading Manual</a></li>
-                <li><a href="trading-journal.html">Trading Journal</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="futures.html">Futures ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-mindset.html">Trading Mindset</a></li>
-                <li><a href="risk-management.html">Risk Management</a></li>
-                <li><a href="technical-analysis.html">Technical Analysis</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="web3.html">Web3 ▾</a>
-            <ul class="dropdown">
-                <li><a href="dex-trading.html">DEX Trading</a></li>
-                <li><a href="trading-tools.html">Trading Tools</a></li>
-                <li><a href="web3-strategy.html">Web3 Strategy</a></li>
-            </ul>
-        </li>
-        <li><a href="market.html">Market</a></li>
-        <li><a href="resources.html">Resources</a></li>
-    </ul>
-</nav>
+                <ul class="main-nav">
+                    <li class="has-dropdown">
+                        <a href="#">Manual & Journal ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-manual.html">Trading Manual</a></li>
+                            <li><a href="trading-journal.html">Trading Journal</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="futures.html">Futures ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-mindset.html">Trading Mindset</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="technical-analysis.html">Technical Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="web3.html">Web3 ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-tools.html">Trading Tools</a></li>
+                            <li><a href="web3-strategy.html">Web3 Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="market.html">Market</a></li>
+                    <li class="has-dropdown">
+                        <a href="javascript:void(0);">Resources ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="resources-chart-patterns.html">Chart Patterns</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button><i class="fas fa-search"></i></button>
@@ -244,337 +221,142 @@
         <div class="container">
             <div class="content-container">
                 <div class="content-header">
-                    <h1>Web3 Trading Tools</h1>
-                    <p>Essential tools and platforms for successful cryptocurrency and DeFi trading</p>
+                    <h1>Essential Web3 Trading Tools</h1>
+                    <p>The most effective platforms for on-chain trading success</p>
                 </div>
                 
                 <div class="content-area">
                     <section>
-                        <h2>The Web3 Trader's Tech Stack</h2>
-                        <p>Successful Web3 trading requires a sophisticated technology stack that goes far beyond what traditional traders use. While conventional markets typically require a single trading platform and perhaps a few analysis tools, crypto and DeFi traders need a complex ecosystem of wallets, analytics platforms, data providers, and security tools.</p>
-                        
-                        <p>The right combination of tools can provide significant advantages through better data access, faster execution, enhanced security, and deeper market insights. This guide covers the essential tools across multiple categories that can transform your trading performance.</p>
-                        
-                        <blockquote>
-                            "In Web3 trading, your tools are not just conveniences—they're strategic advantages that can mean the difference between capturing opportunities others miss and being a step behind the market."
-                        </blockquote>
+                        <h2>Trading Terminals and MEV Protection</h2>
+                        <p>In on-chain trading, having the right tools can mean the difference between capturing alpha and being front-run by bots. These specialized trading platforms offer features specifically designed for Web3 trading environments, providing MEV protection, real-time data, and efficient execution.</p>
                     </section>
                     
-                    <section>
-                        <h2>Finding the Right Tools</h2>
-                        <p>Use the category filters below to explore different types of trading tools:</p>
-                        
-                        <div class="category-filter">
-                            <div class="category-btn active">All Tools</div>
-                            <div class="category-btn">Charting & Analysis</div>
-                            <div class="category-btn">On-Chain Analytics</div>
-                            <div class="category-btn">Portfolio Tracking</div>
-                            <div class="category-btn">Trading Bots</div>
-                            <div class="category-btn">Security Tools</div>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <h2>Charting & Analysis Tools</h2>
-                        
-                        <div class="tool-grid">
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>TradingView <span class="tool-category">Charting</span></h3>
-                                    <p>Industry-standard charting platform with advanced technical analysis tools, custom indicators, and social features.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Basic: <span class="free-tag">Free</span></span>
-                                        <span>Pro: <span class="paid-tag">$15-60/mo</span></span>
-                                    </div>
-                                </div>
+                    <div class="tool-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-chart-line"></i>
                             </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-exchange-alt"></i>
+                            <div class="tool-content">
+                                <h3>GMGN <span class="tool-category">Trading Terminal</span></h3>
+                                <p>A comprehensive trading terminal focused on token discovery and real-time market monitoring with integrated MEV protection.</p>
+                                <div class="tool-screenshot">
+                                    <i class="fas fa-desktop"></i>
                                 </div>
-                                <div class="tool-content">
-                                    <h3>DexScreener <span class="tool-category">DEX Charts</span></h3>
-                                    <p>Real-time charts and analytics for tokens across multiple DEXs and blockchains with liquidity data and trade history.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Basic: <span class="free-tag">Free</span></span>
-                                        <span>Premium API: <span class="paid-tag">Paid</span></span>
-                                    </div>
+                                <div class="key-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Real-time trending token tracking</li>
+                                        <li>Detailed token information including market cap, liquidity, and holder data</li>
+                                        <li>Multi-timeframe price analysis</li>
+                                        <li>Quick buy functionality with slippage controls</li>
+                                        <li>MEV protection for safer trades</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-tools"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>DexTools <span class="tool-category">DEX Analytics</span></h3>
-                                    <p>Comprehensive DEX trading platform with real-time data, pair explorer, and advanced trading tools focused on Ethereum and BNB Chain.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Basic: <span class="free-tag">Free</span></span>
-                                        <span>Premium: <span class="paid-tag">Subscription</span></span>
-                                    </div>
+                                <div class="tool-subscription">
+                                    <span>Basic: <span class="free-tag">Free</span></span>
+                                    <span>Premium: <span class="paid-tag">Subscription</span></span>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    
-                    <section>
-                        <h2>On-Chain Analytics</h2>
                         
-                        <div class="tool-grid">
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Nansen <span class="tool-category">On-Chain Data</span></h3>
-                                    <p>Analytics platform that enriches blockchain data with millions of wallet labels, helping traders track smart money movements and token flows.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Pro: <span class="premium-tag">$90-990/mo</span></span>
-                                    </div>
-                                </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-bolt"></i>
                             </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-chart-bar"></i>
+                            <div class="tool-content">
+                                <h3>Pulse <span class="tool-category">Trading Interface</span></h3>
+                                <p>Advanced trading interface that focuses on new token pairs and market opportunities with integrated trading capabilities.</p>
+                                <div class="tool-screenshot">
+                                    <i class="fas fa-desktop"></i>
                                 </div>
-                                <div class="tool-content">
-                                    <h3>Dune Analytics <span class="tool-category">Data Queries</span></h3>
-                                    <p>Crypto analytics platform allowing users to create and share customizable dashboards using SQL queries on blockchain data.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Basic: <span class="free-tag">Free</span></span>
-                                        <span>Pro: <span class="paid-tag">$390/mo</span></span>
-                                    </div>
+                                <div class="key-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>New pairs discovery dashboard</li>
+                                        <li>"Final Stretch" and "Migrated" token categories</li>
+                                        <li>Detailed trading metrics and indicators</li>
+                                        <li>Quick Buy functionality with amount settings</li>
+                                        <li>Visual display of trading activity and market sentiment</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-tachometer-alt"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>DefiLlama <span class="tool-category">DeFi Metrics</span></h3>
-                                    <p>Open-source DeFi dashboard with TVL rankings, yield farming opportunities, and protocol analytics across multiple chains.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>All Features: <span class="free-tag">Free</span></span>
-                                    </div>
+                                <div class="tool-subscription">
+                                    <span>Basic: <span class="free-tag">Free</span></span>
+                                    <span>Premium: <span class="paid-tag">Subscription</span></span>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    
-                    <section>
-                        <h2>Portfolio Tracking</h2>
                         
-                        <div class="tool-grid">
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-wallet"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Zapper <span class="tool-category">Portfolio Manager</span></h3>
-                                    <p>All-in-one dashboard for managing DeFi positions across multiple protocols and chains with a visual portfolio overview.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>All Features: <span class="free-tag">Free</span></span>
-                                    </div>
-                                </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-robot"></i>
                             </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-coins"></i>
+                            <div class="tool-content">
+                                <h3>Axiom <span class="tool-category">Market Analytics</span></h3>
+                                <p>Token analytics platform that provides in-depth market data and trader insights through intuitive visualizations and metrics.</p>
+                                <div class="tool-screenshot">
+                                    <i class="fas fa-desktop"></i>
                                 </div>
-                                <div class="tool-content">
-                                    <h3>DeBank <span class="tool-category">Portfolio Explorer</span></h3>
-                                    <p>Web3 portfolio tracker that discovers all your tokens and DeFi protocol positions across 15+ blockchains.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>All Features: <span class="free-tag">Free</span></span>
-                                    </div>
+                                <div class="key-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Detailed token metrics including FDV and ATH comparisons</li>
+                                        <li>Liquidity depth analysis</li>
+                                        <li>Trading volume monitoring</li>
+                                        <li>Age tracking and time-based performance metrics</li>
+                                        <li>Support for multiple exchanges and DEXs</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-file-invoice-dollar"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Koinly <span class="tool-category">Tax Reporting</span></h3>
-                                    <p>Crypto tax software that calculates capital gains and creates tax reports by importing transactions from exchanges and wallets.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Basic: <span class="free-tag">Free</span></span>
-                                        <span>Tax Reports: <span class="paid-tag">$49-179</span></span>
-                                    </div>
+                                <div class="tool-subscription">
+                                    <span>Basic: <span class="free-tag">Free</span></span>
+                                    <span>Premium: <span class="paid-tag">Paid</span></span>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                    
+                    <div class="warning-box">
+                        <h3>Trading Security Note</h3>
+                        <p>When using any Web3 trading tool, always:</p>
+                        <ul>
+                            <li>Use a separate wallet with limited funds for active trading</li>
+                            <li>Verify contract addresses before approving any transactions</li>
+                            <li>Be cautious about token approvals - limit permissions when possible</li>
+                            <li>Consider using hardware wallets for storing significant assets</li>
+                            <li>Regularly check and revoke unused contract approvals</li>
+                        </ul>
+                    </div>
                     
                     <section>
-                        <h2>Trading Bots & Automation</h2>
-                        
-                        <div class="tool-grid">
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>3Commas <span class="tool-category">Bot Platform</span></h3>
-                                    <p>Cryptocurrency trading bot platform supporting multiple exchanges with automated trading strategies and portfolio management.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Starter: <span class="paid-tag">$14.50/mo</span></span>
-                                        <span>Pro: <span class="premium-tag">$24.50-49.50/mo</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Hummingbot <span class="tool-category">Algo Trading</span></h3>
-                                    <p>Open-source market making and arbitrage bot for both centralized exchanges and DEXs with customizable strategies.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Open Source: <span class="free-tag">Free</span></span>
-                                        <span>Hosted: <span class="paid-tag">Subscription</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Furucombo <span class="tool-category">DeFi Automation</span></h3>
-                                    <p>Visual transaction builder for creating complex DeFi operations without coding, combining multiple actions into one transaction.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>All Features: <span class="free-tag">Free</span></span>
-                                        <span>(Gas fees apply)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <h2>Security Tools</h2>
-                        
-                        <div class="tool-grid">
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Revoke.cash <span class="tool-category">Token Approvals</span></h3>
-                                    <p>Audit and revoke token approvals you've granted to DApps, protecting your assets from potential smart contract exploits.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>All Features: <span class="free-tag">Free</span></span>
-                                        <span>(Gas fees apply)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-unlock-alt"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Ledger <span class="tool-category">Hardware Wallet</span></h3>
-                                    <p>Physical hardware wallet that stores your private keys offline, providing maximum security for crypto assets.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Nano S Plus: <span class="paid-tag">$79</span></span>
-                                        <span>Nano X: <span class="paid-tag">$149</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tool-card">
-                                <div class="tool-icon">
-                                    <i class="fas fa-search-dollar"></i>
-                                </div>
-                                <div class="tool-content">
-                                    <h3>Etherscan <span class="tool-category">Blockchain Explorer</span></h3>
-                                    <p>Comprehensive blockchain explorer for Ethereum that allows verification of transactions, smart contracts, and token movements.</p>
-                                    <div class="tool-screenshot">
-                                        <i class="fas fa-desktop"></i>
-                                    </div>
-                                    <div class="tool-subscription">
-                                        <span>Basic: <span class="free-tag">Free</span></span>
-                                        <span>API: <span class="paid-tag">Subscription</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <h2>Building Your Tool Stack</h2>
-                        <p>The best Web3 trading tool stack is personalized to your specific trading style, goals, and experience level. Start with the essentials:</p>
+                        <h2>Getting Started With On-Chain Trading Tools</h2>
+                        <p>For those new to on-chain trading, here's a simple process to get started:</p>
                         
                         <ol>
-                            <li><strong>Security first:</strong> Hardware wallet and approval management tools should be your first investment</li>
-                            <li><strong>Data foundation:</strong> Select charting tools and on-chain analytics that match your trading timeframe</li>
-                            <li><strong>Portfolio visibility:</strong> Choose a portfolio tracker that covers all chains you interact with</li>
-                            <li><strong>Automation:</strong> Add trading bots or execution tools only after mastering manual trading</li>
+                            <li><strong>Select your primary chain</strong> - Focus on chains with high liquidity like Ethereum, BNB Chain, or Solana</li>
+                            <li><strong>Set up a dedicated trading wallet</strong> - Create a new wallet specifically for trading activities</li>
+                            <li><strong>Connect to multiple trading tools</strong> - Each tool offers different advantages; using them in combination provides the most complete market view</li>
+                            <li><strong>Start with small positions</strong> - Build familiarity with the tools before committing larger capital</li>
+                            <li><strong>Utilize MEV protection</strong> - Whenever possible, enable MEV protection to prevent front-running</li>
                         </ol>
                         
-                        <p>Remember that the tool itself doesn't create alpha—it's how you use the insights provided. Invest time in learning each platform thoroughly rather than constantly switching between alternatives.</p>
+                        <p>Remember that on-chain trading is highly social - staying connected to community channels and monitoring social sentiment can provide valuable trading signals beyond what technical tools can offer.</p>
                     </section>
-                    
-                    <section class="next-steps">
-                        <h2>Continue Your Web3 Trading Education</h2>
-                        <p>Now that you understand the essential Web3 trading tools, explore these related topics:</p>
-                        <div class="button-group">
-                            <a href="dex-trading.html" class="btn">DEX Trading</a>
-                            <a href="web3-strategy.html" class="btn">Web3 Strategy</a>
-                            <a href="web3.html" class="btn">Back to Web3 Trading</a>
-                        </div>
-                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Art of the Trade. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
