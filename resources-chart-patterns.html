@@ -98,11 +98,6 @@
             margin-right: 5px;
         }
         
-        .success-rate {
-            color: #28a745;
-            font-weight: bold;
-        }
-        
         .pattern-tabs {
             display: flex;
             border-bottom: 1px solid #ddd;
@@ -128,13 +123,20 @@
             color: #2a4163;
         }
         
-        /* Add a placeholder style for chart images that will be uploaded later */
-        .placeholder-note {
-            background-color: #f8f9fa;
-            border: 1px dashed #ccc;
+        .pattern-details {
+            margin-top: 20px;
             padding: 20px;
-            text-align: center;
-            margin: 30px 0;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .pattern-details h4 {
+            margin-bottom: 15px;
+            color: #2a4163;
+        }
+        
+        .pattern-steps {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -142,35 +144,35 @@
     <header>
         <div class="container">
             <div class="logo"><a href="index.html">Art of the Trade</a></div>
-          <nav>
-    <ul class="main-nav">
-          <li class="has-dropdown">
-            <a href="#">Manual & Journal ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-manual.html">Trading Manual</a></li>
-                <li><a href="trading-journal.html">Trading Journal</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="futures.html">Futures ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-mindset.html">Trading Mindset</a></li>
-                <li><a href="risk-management.html">Risk Management</a></li>
-                <li><a href="technical-analysis.html">Technical Analysis</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="web3.html">Web3 ▾</a>
-            <ul class="dropdown">
-                <li><a href="dex-trading.html">DEX Trading</a></li>
-                <li><a href="trading-tools.html">Trading Tools</a></li>
-                <li><a href="web3-strategy.html">Web3 Strategy</a></li>
-            </ul>
-        </li>
-        <li><a href="market.html">Market</a></li>
-        <li><a href="resources.html">Resources</a></li>
-    </ul>
-</nav>
+            <nav>
+                <ul class="main-nav">
+                    <li class="has-dropdown">
+                        <a href="#">Manual & Journal ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-manual.html">Trading Manual</a></li>
+                            <li><a href="trading-journal.html">Trading Journal</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="futures.html">Futures ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-mindset.html">Trading Mindset</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="technical-analysis.html">Technical Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="web3.html">Web3 ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="dex-trading.html">DEX Trading</a></li>
+                            <li><a href="trading-tools.html">Trading Tools</a></li>
+                            <li><a href="web3-strategy.html">Web3 Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button><i class="fas fa-search"></i></button>
@@ -182,227 +184,195 @@
         <div class="container">
             <div class="content-container">
                 <div class="content-header">
-                    <h1>Chart Patterns Library</h1>
-                    <p>A comprehensive collection of cryptocurrency chart patterns with real examples and trading strategies</p>
+                    <h1>Top 5 High-Accuracy Chart Patterns</h1>
+                    <p>A focused collection of the most reliable cryptocurrency chart patterns with detailed trading strategies</p>
                 </div>
                 
                 <div class="content-area">
-                    <div class="pattern-tabs">
-                        <div class="pattern-tab active">All Patterns</div>
-                        <div class="pattern-tab">Reversal Patterns</div>
-                        <div class="pattern-tab">Continuation Patterns</div>
-                        <div class="pattern-tab">Candlestick Patterns</div>
-                    </div>
-                    
                     <section>
-                        <p>Chart patterns are formations that appear on price charts that may help predict future price movements. They represent the psychological battles between buyers and sellers and often signal continuation or reversal of existing trends. This library contains detailed information on the most reliable patterns seen in cryptocurrency markets.</p>
-                        
-                        <p>Each pattern includes real cryptocurrency chart examples, statistical success rates based on historical data, optimal entry and exit strategies, and key levels to watch.</p>
-                        
-                        <div class="placeholder-note">
-                            <h3>Ready for Your Chart Examples</h3>
-                            <p>This page is structured for you to add your own chart pattern examples, explanations, and trading strategies. The placeholders below show the format for each pattern.</p>
-                            <p>For each pattern, consider adding:</p>
-                            <ul style="text-align: left; display: inline-block;">
-                                <li>Multiple real cryptocurrency chart examples</li>
-                                <li>Step-by-step formation criteria</li>
-                                <li>Entry and exit strategies</li>
-                                <li>Stop loss placement</li>
-                                <li>Success rates and validity conditions</li>
-                            </ul>
-                        </div>
+                        <p>Chart patterns are geometric shapes found in price charts that can help predict future price movements. These patterns represent the psychological battles between buyers and sellers in the market. This curated library focuses on the five most reliable patterns that have proven effective in cryptocurrency trading.</p>
                     </section>
                     
-                    <h2 class="resource-section-title">Reversal Patterns</h2>
+                    <h2 class="resource-section-title">1. Swing Fail Pattern (SFP/Deviation)</h2>
                     
-                    <div class="pattern-grid">
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Head and Shoulders</h3>
-                                <p>A bearish reversal pattern consisting of three peaks, with the middle peak (head) being higher than the two surrounding peaks (shoulders).</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">73%</span></div>
-                                    <div><i class="fas fa-sort-amount-down"></i> Bearish</div>
-                                </div>
-                            </div>
+                    <div class="pattern-card">
+                        <div class="pattern-image">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Inverse Head and Shoulders</h3>
-                                <p>A bullish reversal pattern consisting of three troughs, with the middle trough (head) being lower than the two surrounding troughs (shoulders).</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">75%</span></div>
-                                    <div><i class="fas fa-sort-amount-up"></i> Bullish</div>
+                        <div class="pattern-content">
+                            <h3>Swing Fail Pattern (SFP)</h3>
+                            <p>A powerful pattern where price briefly breaks a significant support/resistance level but quickly reverses, trapping traders who entered on the breakout.</p>
+                            <div class="pattern-details">
+                                <h4>Formation Criteria:</h4>
+                                <div class="pattern-steps">
+                                    <ol>
+                                        <li>Identify a clear support or resistance level that has been tested multiple times</li>
+                                        <li>Price briefly breaks through this level (deviation)</li>
+                                        <li>Price quickly reverses and moves back beyond the level in the opposite direction</li>
+                                        <li>Volume often increases during the reversal phase</li>
+                                    </ol>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Double Top</h3>
-                                <p>A bearish reversal pattern where price reaches a high point, retraces, and then reaches a similar high point before declining.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">78%</span></div>
-                                    <div><i class="fas fa-sort-amount-down"></i> Bearish</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Double Bottom</h3>
-                                <p>A bullish reversal pattern where price reaches a low point, rebounds, and then reaches a similar low point before rising.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">80%</span></div>
-                                    <div><i class="fas fa-sort-amount-up"></i> Bullish</div>
-                                </div>
+                                <h4>Trading Strategy:</h4>
+                                <ul>
+                                    <li><strong>Entry:</strong> Enter after confirmation of the reversal (price moving back through the original level)</li>
+                                    <li><strong>Stop Loss:</strong> Place slightly beyond the extreme point of the deviation</li>
+                                    <li><strong>Take Profit:</strong> Target the previous swing high/low in the opposite direction, or use a risk-reward ratio of at least 1:2</li>
+                                </ul>
+                                <h4>Key Points:</h4>
+                                <ul>
+                                    <li>Stronger when occurring at major liquidity areas or after extended trends</li>
+                                    <li>Often represents smart money triggering stop losses before reversing the market</li>
+                                    <li>Look for volume confirmation during the reversal phase</li>
+                                    <li>Can work on all timeframes, but more reliable on higher timeframes (4H+)</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     
-                    <h2 class="resource-section-title">Continuation Patterns</h2>
+                    <h2 class="resource-section-title">2. Double Top/Bottom Pattern</h2>
                     
-                    <div class="pattern-grid">
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Bull Flag</h3>
-                                <p>A bullish continuation pattern consisting of a strong uptrend (the pole) followed by a rectangular consolidation pattern (the flag).</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">67%</span></div>
-                                    <div><i class="fas fa-sort-amount-up"></i> Bullish</div>
-                                </div>
-                            </div>
+                    <div class="pattern-card">
+                        <div class="pattern-image">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Bear Flag</h3>
-                                <p>A bearish continuation pattern consisting of a strong downtrend (the pole) followed by a rectangular consolidation pattern (the flag).</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">65%</span></div>
-                                    <div><i class="fas fa-sort-amount-down"></i> Bearish</div>
+                        <div class="pattern-content">
+                            <h3>Double Top/Bottom Pattern</h3>
+                            <p>A reversal pattern where price tests a key level twice but fails to break through, indicating exhaustion and a potential trend change.</p>
+                            <div class="pattern-details">
+                                <h4>Formation Criteria:</h4>
+                                <div class="pattern-steps">
+                                    <ol>
+                                        <li>Price reaches an extreme (peak or trough) and reverses</li>
+                                        <li>Price retraces partially toward the previous trend</li>
+                                        <li>Price returns to test the first extreme again, forming a second peak/trough at approximately the same level</li>
+                                        <li>Price fails to break through and begins to move in the opposite direction</li>
+                                        <li>Pattern completes when price breaks the "neckline" (middle trough for double top or middle peak for double bottom)</li>
+                                    </ol>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Ascending Triangle</h3>
-                                <p>A bullish continuation pattern characterized by a flat upper resistance line and an upward-sloping lower support line.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">72%</span></div>
-                                    <div><i class="fas fa-sort-amount-up"></i> Bullish</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Descending Triangle</h3>
-                                <p>A bearish continuation pattern characterized by a flat lower support line and a downward-sloping upper resistance line.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">70%</span></div>
-                                    <div><i class="fas fa-sort-amount-down"></i> Bearish</div>
-                                </div>
+                                <h4>Trading Strategy:</h4>
+                                <ul>
+                                    <li><strong>Entry:</strong> Enter when price breaks the neckline with confirmation (increased volume)</li>
+                                    <li><strong>Stop Loss:</strong> Place above/below the second peak/trough</li>
+                                    <li><strong>Take Profit:</strong> Measure the height from extreme to neckline and project that distance from the breakpoint</li>
+                                </ul>
+                                <h4>Key Points:</h4>
+                                <ul>
+                                    <li>The more similar in height the two peaks/troughs are, the more reliable the pattern</li>
+                                    <li>Volume typically decreases on the second test, showing weakening momentum</li>
+                                    <li>Stronger when formed after extended trends, indicating exhaustion</li>
+                                    <li>Can sometimes develop into triple tops/bottoms, offering another entry opportunity</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     
-                    <h2 class="resource-section-title">Candlestick Patterns</h2>
+                    <h2 class="resource-section-title">3. Engulfing Candle Pattern</h2>
                     
-                    <div class="pattern-grid">
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Hammer</h3>
-                                <p>A bullish reversal candlestick pattern that forms during a downtrend, with a small body and a long lower shadow.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">63%</span></div>
-                                    <div><i class="fas fa-sort-amount-up"></i> Bullish</div>
-                                </div>
-                            </div>
+                    <div class="pattern-card">
+                        <div class="pattern-image">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Shooting Star</h3>
-                                <p>A bearish reversal candlestick pattern that forms during an uptrend, with a small body and a long upper shadow.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">67%</span></div>
-                                    <div><i class="fas fa-sort-amount-down"></i> Bearish</div>
+                        <div class="pattern-content">
+                            <h3>Engulfing Candle Pattern</h3>
+                            <p>A two-candle reversal pattern where the second candle completely engulfs the body of the first candle, indicating a strong shift in market sentiment.</p>
+                            <div class="pattern-details">
+                                <h4>Formation Criteria:</h4>
+                                <div class="pattern-steps">
+                                    <ol>
+                                        <li>First candle is in the direction of the current trend</li>
+                                        <li>Second candle opens beyond the first candle's close and closes beyond the first candle's open</li>
+                                        <li>The body of the second candle completely engulfs the body of the first candle</li>
+                                        <li>The pattern is stronger when the engulfing candle has minimal or no wicks</li>
+                                    </ol>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Engulfing Pattern</h3>
-                                <p>A two-candle reversal pattern where the second candle completely engulfs the body of the first candle.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">76%</span></div>
-                                    <div><i class="fas fa-exchange-alt"></i> Reversals</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pattern-card">
-                            <div class="pattern-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="pattern-content">
-                                <h3>Doji</h3>
-                                <p>A single candle pattern with a very small body, indicating indecision in the market and potential reversals.</p>
-                                <div class="pattern-meta">
-                                    <div><i class="fas fa-check-circle"></i> <span class="success-rate">52%</span></div>
-                                    <div><i class="fas fa-exchange-alt"></i> Reversals</div>
-                                </div>
+                                <h4>Trading Strategy:</h4>
+                                <ul>
+                                    <li><strong>Entry:</strong> Enter at the open of the candle following the engulfing pattern</li>
+                                    <li><strong>Stop Loss:</strong> Place below/above the low/high of the engulfing candle</li>
+                                    <li><strong>Take Profit:</strong> Target next significant support/resistance level or use Fibonacci retracement levels</li>
+                                </ul>
+                                <h4>Key Points:</h4>
+                                <ul>
+                                    <li>Most effective when occurring at key support/resistance levels or after extended trends</li>
+                                    <li>The larger the engulfing candle, the stronger the reversal signal</li>
+                                    <li>Higher volume on the engulfing candle increases reliability</li>
+                                    <li>Confirmation with other indicators (RSI divergence, MACD crossover) strengthens the signal</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="placeholder-note">
-                        <h3>Instructions for Adding Your Own Chart Examples</h3>
-                        <p>To add your own chart examples:</p>
-                        <ol style="text-align: left; display: inline-block;">
-                            <li>Replace the placeholder icons with actual cryptocurrency chart images</li>
-                            <li>Update the pattern descriptions with your specific trading insights</li>
-                            <li>Adjust the success rates based on your own analysis or research</li>
-                            <li>Add additional patterns that you find particularly effective in crypto markets</li>
-                            <li>Consider including specific examples from Bitcoin, Ethereum, and other major cryptocurrencies</li>
-                        </ol>
+                    <h2 class="resource-section-title">4. Wyckoff Accumulation/Distribution</h2>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="pattern-content">
+                            <h3>Wyckoff Accumulation/Distribution</h3>
+                            <p>A complex market structure that identifies phases where smart money accumulates or distributes positions before major price movements.</p>
+                            <div class="pattern-details">
+                                <h4>Formation Criteria (Accumulation):</h4>
+                                <div class="pattern-steps">
+                                    <ol>
+                                        <li><strong>Phase A:</strong> Downtrend ends with increased volume and price range (selling climax)</li>
+                                        <li><strong>Phase B:</strong> Trading range develops with tests of support and resistance (accumulation)</li>
+                                        <li><strong>Phase C:</strong> Final spring or test of support that shakes out weak hands</li>
+                                        <li><strong>Phase D:</strong> Sign of strength with increased volume and range expansion</li>
+                                        <li><strong>Phase E:</strong> Price exits trading range with strong momentum</li>
+                                    </ol>
+                                </div>
+                                <h4>Trading Strategy:</h4>
+                                <ul>
+                                    <li><strong>Entry:</strong> Primary entry after spring in Phase C, secondary entry during Phase E breakout</li>
+                                    <li><strong>Stop Loss:</strong> Below the spring low (for accumulation) or above the UTAD (for distribution)</li>
+                                    <li><strong>Take Profit:</strong> Project the height of the trading range from the breakout point</li>
+                                </ul>
+                                <h4>Key Points:</h4>
+                                <ul>
+                                    <li>Volume analysis is crucial for confirming each phase</li>
+                                    <li>Look for diminishing volume during tests and increasing volume during breakouts</li>
+                                    <li>Price action should show evidence of absorption (buying on weakness or selling on strength)</li>
+                                    <li>Most effective on higher timeframes (daily and above)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="resource-section-title">5. Order Block Pattern</h2>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="pattern-content">
+                            <h3>Order Block Pattern</h3>
+                            <p>A price area where significant buying or selling occurred before a strong impulse move, often returning to act as support/resistance in the future.</p>
+                            <div class="pattern-details">
+                                <h4>Formation Criteria:</h4>
+                                <div class="pattern-steps">
+                                    <ol>
+                                        <li>Identify the last opposing candle before a strong impulse move (the order block)</li>
+                                        <li>The order block often shows imbalance (large body with minimal wicks)</li>
+                                        <li>Price makes a strong, clean move away from the order block</li>
+                                        <li>Price eventually returns to the order block area after the impulse move</li>
+                                    </ol>
+                                </div>
+                                <h4>Trading Strategy:</h4>
+                                <ul>
+                                    <li><strong>Entry:</strong> Enter when price returns to the order block area and shows reaction (rejection)</li>
+                                    <li><strong>Stop Loss:</strong> Place beyond the opposite side of the order block</li>
+                                    <li><strong>Take Profit:</strong> Target the previous swing high/low or use Fibonacci extension levels</li>
+                                </ul>
+                                <h4>Key Points:</h4>
+                                <ul>
+                                    <li>The more impulsive the move away from the order block, the stronger its future significance</li>
+                                    <li>Mitigation of the order block often leads to strong continuation in the original direction</li>
+                                    <li>Multiple timeframe confirmation increases reliability</li>
+                                    <li>Often coincides with fair value gaps (FVGs) and market structure breaks</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
