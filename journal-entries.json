@@ -43,7 +43,7 @@
           "notes": "Missed my entry on Bitcoin, XRP has been a good BTC beta, I'll squeeze this instead."
         },
         {
-         "number": "3",
+          "number": "3",
           "asset": "XRP",
           "time": "9 April 00:42 AM",
           "entry": "1.8580",
@@ -52,9 +52,9 @@
           "exit": "1.8479",
           "R": "0.1",
           "notes": "Lots of uncertainty, I'm closing my previous XRP short for a small profit, and re-entered higher."
-        }
-         {
-         "number": "4",
+        },
+        {
+          "number": "4",
           "asset": "XRP",
           "time": "9 April 00:58 AM",
           "entry": "1.8537",
@@ -63,9 +63,9 @@
           "exit": "1.7672",
           "R": "0.75",
           "notes": "Now this is the cream of the move, closed my earlier trade again for small profit, the moment I sensed a big move coming, I scaled in back with double size."
-        }
-         {
-         "number": "5",
+        },
+        {
+          "number": "5",
           "asset": "XRP",
           "time": "9 April 09:45 AM",
           "entry": "1.7746",
