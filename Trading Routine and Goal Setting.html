@@ -16,120 +16,21 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Additional styles for the market preview */
-        .chart-preview {
-            height: auto;
-            overflow: hidden;
-            border-radius: 5px 5px 0 0;
-            position: relative;
-        }
-        
-        .chart-preview img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .chart-preview .no-bueno {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            background-color: rgba(220, 53, 69, 0.8);
-            color: white;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
-            font-style: italic;
-        }
-        
-        .market-preview-content {
-            padding: 15px;
-        }
-        
-        .market-preview-content h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-        }
-        
-        .market-preview-content p {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        
-        .market-date {
-            font-size: 12px;
-            color: var(--light-text);
-            margin-bottom: 10px;
-            display: block;
-        }
-        
-        .price-preview {
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
-        .article-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .article-content h1 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        
-        .article-content h2 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-        
-        .article-content h3 {
-            color: var(--dark-text);
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-        
-        .article-content p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-        
-        .article-content ul {
-            margin-bottom: 20px;
-            padding-left: 20px;
-        }
-        
-        .article-content li {
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-        
-        .article-content hr {
-            margin: 30px 0;
-            border: 0;
-            height: 1px;
-            background-color: #eee;
-        }
-        
-        .routine-content {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-        
+        /* Additional styles specific to this page */
         .checklist {
             background: #f7f9fc;
             border-left: 4px solid var(--primary-color);
             padding: 15px 20px;
             margin: 20px 0;
+        }
+        
+        .checklist h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .checklist ul {
+            padding-left: 20px;
         }
         
         .key-point {
@@ -144,28 +45,356 @@
             padding-left: 15px;
             margin: 20px 0;
         }
+        
+        .routine-content {
+            background: white;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .routine-content h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+        
+        .routine-content h3 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+        }
+        
+        .routine-content ul {
+            padding-left: 25px;
+        }
+        
+        .routine-content ul li {
+            margin-bottom: 10px;
+        }
+        
+        .routine-section {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Header content goes here -->
+        <div class="container">
+            <div class="logo"><a href="index.html">Art of the Trade</a></div>
+            <nav class="nav-menu">
+                <!-- Navigation will be injected by navigation-update.js -->
+                <ul class="main-nav">
+                    <li class="has-dropdown">
+                        <a href="#">Manual & Journal ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-manual.html">Trading Manual</a></li>
+                            <li><a href="trading-journal.html">Trading Journal</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="futures.html">Futures ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-mindset.html">Trading Mindset</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="technical-analysis.html">Technical Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="web3.html">Web3 ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-tools.html">Trading Tools</a></li>
+                            <li><a href="web3-strategy.html">Web3 Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
     </header>
 
     <main>
         <div class="container">
+            <!-- Hero section -->
             <section class="hero">
                 <h1>Trading Routine & Goal Setting</h1>
                 <p>"Trading is more than just placing individual trades; being a trader means developing the right mindset, process, and discipline to perform consistently at a higher level"</p>
             </section>
             
+            <!-- Intro section -->
             <section class="routine-content">
-                <!-- Original content sections with all text -->
+                <h2>The Foundation: Routine and Goal Setting - My Turning Point</h2>
+                <p>For me, this is really key. Routine and goal setting build nicely upon the ideas of having a process and managing psychology. They provide a level of organization and structure, helping you work towards a clear path for the week ahead and each day. If you're trading full-time, you need a very clear objective.</p>
+                
+                <p>One of the biggest changes in my own trading career over the last 9 years was implementing a process, and a crucial part of that process is routine and setting goals for the week ahead. I started implementing a routine back in 2019, and for me, that was the turning point. It gave me a purpose in terms of trading the markets.</p>
+                
+                <div class="quote">
+                    I stopped being impulsive in my trading. I had a clear plan for which markets I was looking to trade.
+                </div>
+                
+                <p>I strongly believe that as a trader, you need a monthly, weekly, and daily routine. This level of organization and structure with pre-market preparation is essential each and every day. It helps you set clear, realistic goals for the week and each day.</p>
+                
+                <p>You then understand the difference between a process-oriented approach versus just being outcome-focused. You want to strive towards that level where you understand your purpose in trading.</p>
+            </section>
+            
+            <!-- Trading as a Business section -->
+            <section class="routine-content">
+                <h2>Trading as a Professional Endeavor - My Approach</h2>
+                
+                <p>To succeed at a high level, I have to approach trading the way professionals approach it. That means <span class="key-point">treating it like a business</span>. I'm the CEO, the strategist, the person responsible for executing trades.</p>
+                
+                <p>Most of the real work isn't just clicking buttons; it's actually outside of market hours, particularly on the weekend, when I'm reviewing my process and my journal. I have a routine for that, and I have to follow that routine and structure. I think of it like a professional sport.</p>
+                
+                <div class="quote">
+                    There are no shortcuts; I've got to study, refine my edge, show up, and bring the best version of myself every single day to that desk.
+                </div>
+                
+                <p>After trading, I need to reflect on how I traded, do an end-of-day review, an end-of-week review, go over my journal, and go over my statistics. If you're not recording your statistics, how are you ever going to have accountability and track your progress? You'll never understand your expected value or expectancy per trade.</p>
+                
+                <h3>The Power of Routine: Consistency, Confidence, and Measurable Progress - My Experience</h3>
+                
+                <p>Why is a routine so powerful? Because it helps me build consistency in my trading. It gives me structure and builds confidence in my ability. I start seeing progress, tracking it, and seeing results to improve upon. I start to understand what went well each day, and then at the end of the week and month.</p>
+                
+                <p>A consistent trading routine really helps remove large parts of that randomness from my process. It's helped me build confidence over the years. I know my best setups, like trading around range extremities, where price often ranges 70-80% of the time. I have a very clearly defined expected value trading range extremities now.</p>
+                
+                <p>Without expectancy, you can't really scale up a strategy or your performance because then you're trading off emotions, which can't be scaled. Structure and consistency aren't just habits; they fuel the long-term success of the journey.</p>
+                
+                <p>To make real progress, I have to operate with a clear objective. Keeping the end goal in mind is important, but I also need to focus on the path – building realistic expectancy and understanding my edge. If one of my aims is to get into a prop firm, I'll need a track record. To make that progression, I need to show my results and performance. I build this track record step by step, day by day; having a clear structure and journaling my process is key.</p>
+            </section>
+            
+            <!-- Weekly Routine section -->
+            <section class="routine-content">
+                <h2>The Weekly Routine: Planning for Success - My Process</h2>
+                
+                <p>The weekly routine plays an essential part in my planning and preparation for the week ahead. It sets the foundation for daily activities and helps maintain a structured approach to the markets.</p>
+                
+                <div class="routine-section">
+                    <h3>1. Mental Preparation</h3>
+                    <ul>
+                        <li>I review the previous week's emotional triggers and performance notes</li>
+                        <li>This is part of the "being phase" of the performance process cycle, reconnecting with my mental framework and key focus areas</li>
+                        <li>I generally do this on a Sunday</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>2. Market Preparation</h3>
+                    <ul>
+                        <li>I do a top-down market analysis starting with global macro news and events for the week</li>
+                        <li>I look at the economic calendar to identify key events that are likely to impact markets and increase volatility</li>
+                        <li>I need to be aware of these events. For example, I often choose not to trade on CPI or FOMC dates</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>3. Trade Planning</h3>
+                    <ul>
+                        <li>I define a flexible bias for the market for the week and understand the volatility regime I'm in</li>
+                        <li>This helps me think about my risk and trade structure differently depending on whether volatility is high or low</li>
+                        <li>I prepare for different scenarios that might unfold during the week</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>4. Idea Generation</h3>
+                    <ul>
+                        <li>I look for quality setups based on high time frame (monthly, weekly) levels</li>
+                        <li>Look for confluences across different analysis methods</li>
+                        <li>Document these ideas for execution in the coming week</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>5. Building a Focus List</h3>
+                    <ul>
+                        <li>I scan many markets (often 12-14) as part of my weekly prep</li>
+                        <li>However, I filter this down to a focus list of three to four markets for the week ahead. For example, often it's Bitcoin, Solana, ESNQ, and perhaps one FX pair</li>
+                        <li>This provides organization and structure. I identify support and resistance levels and actionable items</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>6. Setting Alerts</h3>
+                    <ul>
+                        <li>I set price alerts at key levels in those focus markets</li>
+                        <li>This notifies me when potential trading opportunities arise</li>
+                        <li>Allows me to be more efficient with my time and attention</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>7. Weekly Review</h3>
+                    <ul>
+                        <li>This is crucial for refining my process, identifying my edge, correcting issues, and leveling up my execution</li>
+                        <li>I normally do this review prior to the weekly routine, often on a Saturday. It's part of the "letting go phase"</li>
+                        <li>I review my trades, look at my journal and performance, and try to evaluate where I could improve, focusing on strengths and removing weaknesses</li>
+                    </ul>
+                </div>
+                
+                <p>All of this involves high time frame mapping, planning ahead, and creating a focus list, giving me options for the coming week.</p>
+            </section>
+            
+            <!-- Daily Routine section -->
+            <section class="routine-content">
+                <h2>The Daily Routine: Consistency in Execution - My Steps</h2>
+                
+                <p>The daily routine is important because it gives me consistency and reinforces habits for repeatable performance. I know I won't nail every trade, but I can nail my process – that's something I can control. The daily routine sharpens my focus by directing my attention to the predetermined markets and levels on my focus list, reducing distractions and improving execution.</p>
+                
+                <div class="quote">
+                    I know exactly "where, what, why, and how" to potentially get into a trade ahead of time. This helps me stay in sync with the market.
+                </div>
+                
+                <div class="routine-section">
+                    <h3>My Morning Preparation</h3>
+                    <ul>
+                        <li>I get up early, often around 5 am for the gym</li>
+                        <li>I like to be at the desk early ahead of the London session (6-7 am) or by 11 am if I'm trading only the New York session</li>
+                        <li>I review the economic calendar and the latest headlines from the overnight session</li>
+                        <li>I look at market sentiment (VIX, put/call ratio) and check global market performance, identifying leaders and laggards</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>Position and Risk Review</h3>
+                    <ul>
+                        <li>If I have positions open, I review them, check the evolving risk (R), manage stops/targets</li>
+                        <li>I make sure there are no stale limit orders in the book</li>
+                        <li>A critical daily check is my current risk and exposure against my defined limits for the day and week</li>
+                        <li>If I've breached my weekly drawdown limit, I have to stop trading and review what went wrong</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>Daily Market Review</h3>
+                    <ul>
+                        <li>I review the market, checking the high time frame levels mapped on Sunday</li>
+                        <li>I consider sector analysis (like AI coins if trading crypto) and the overall trend and volatility regime</li>
+                        <li>Based on this, I update my watch list, refining it to three to four markets for the day, and setting alerts</li>
+                        <li>Understanding the market context and volatility regime is crucial - I believe many traders ignore this</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>Mental Preparation</h3>
+                    <ul>
+                        <li>Before trading, I need to get into the "right zone" or "optimal flow"</li>
+                        <li>This involves reviewing my mental mindset journal, ensuring I'm clear and reset for the day</li>
+                        <li>I make sure my mindset sheets are ready and check my rules, like the "inchworm" concept</li>
+                        <li>I work to stay at my "A game" and not carry baggage from the day before</li>
+                    </ul>
+                </div>
+                
+                <div class="checklist">
+                    <h4>My Pre-Trade Checklist for Each Focus Market</h4>
+                    <ul>
+                        <li>Technical mappings (levels, trends, VWAP, EMAs, market profile)</li>
+                        <li>Checking trading templates, liquidity zones, momentum oscillators</li>
+                        <li>Assessing market context (ranging, trending, volatility)</li>
+                        <li>Book depth and volume analysis</li>
+                        <li>Building situational awareness by playing out "what if" scenarios</li>
+                    </ul>
+                </div>
+                
+                <p>This detailed analysis helps me define trade expectations (mean reversion, breakout). Going through this takes me a good half an hour to 60 minutes. This structured approach ensures I'm not trading purely off emotion or impulsiveness.</p>
+            </section>
+            
+            <!-- Execution and Review section -->
+            <section class="routine-content">
+                <h2>Execution and Review: The Trade Lifecycle - My Process</h2>
+                
+                <div class="routine-section">
+                    <h3>Trade Setup Documentation</h3>
+                    <ul>
+                        <li>When a trade setup appears based on my plan, I detail it: symbol, direction, checklist confirmation</li>
+                        <li>I document environment awareness, setup criteria, bias, expectations</li>
+                        <li>Importantly, I list reasons not to take the trade</li>
+                        <li>Position sizing is vital; I calculate contract numbers based on risk willingness</li>
+                        <li>I ensure I stay within my overall risk limits, especially with multiple positions open, to avoid breaching my weekly drawdown</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>Trade Execution and Management</h3>
+                    <ul>
+                        <li>When logging trades, I detail entry/exit, targets, stop loss</li>
+                        <li>I record risk amount (aiming for max -1R loss), prospective R, scaling details</li>
+                        <li>I track results (P/L, target hit, MAE/MFE, attempts)</li>
+                        <li>This planning helps me get into the "zone" for trading</li>
+                        <li>Reviewing losses is critical, noting the stop price and size of the loss</li>
+                        <li>It should never exceed more than minus one R; if it does, there's a problem in my process</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>Post-Trade Reflection</h3>
+                    <ul>
+                        <li>Crucially, post-trade reflection involves summarizing my thoughts during the trade (execution, management, observations)</li>
+                        <li>I note the reason for closing the trade</li>
+                        <li>I specifically note if emotions like greed, fear, overconfidence, or lack of confidence influenced my decision</li>
+                        <li>This is logged in my journal and mental log</li>
+                        <li>This information feeds into my end-of-day and end-of-week reviews</li>
+                    </ul>
+                </div>
+                
+                <div class="quote">
+                    Reviewing losses is particularly important. It should never exceed more than minus one R; if it does, there's a problem in my process.
+                </div>
+            </section>
+            
+            <!-- Adapting the Process section -->
+            <section class="routine-content">
+                <h2>Personalization and Enjoyment - Finding Your Way</h2>
+                
+                <p>While I've shared my specific routine, which is tailored for intraday/intraweek trading, the core message is to develop your own process and routine. Copying mine exactly might not suit everyone; if you're a scalper or a positional trader, this process might not be right for you.</p>
+                
+                <p>Ultimately, you must find what works for you and, critically, <span class="key-point">enjoy the process</span>, because if you don't, honestly, you're not going to stick to it.</p>
+                
+                <h3>Key Takeaways From My Journey:</h3>
+                <ul>
+                    <li>For myself, I'm always looking for ways to improve through reflection</li>
+                    <li>Daily planning and reflection are non-negotiables in my process</li>
+                    <li>If my routine is disorganized, it's going to show up in my trading</li>
+                    <li>The key for me is setting my goals, structuring a plan, and building my edge one day at a time</li>
+                    <li>Over time, routine reinforces the discipline I need to perform under pressure</li>
+                    <li>One strategy I can repeat over and over is trading range extremities, allowing me to become very efficient and profitable</li>
+                    <li>Using that process, I can scale up in size because I have the repetitions and the process in place</li>
+                    <li>I know my execution and risk management through consistent practice</li>
+                </ul>
+                
+                <p>By solidifying both your weekly and daily structure and aligning it with clear, meaningful goals, you build a framework that supports performance and helps you manage emotions in real time. This is how we start treating trading like a high-performance discipline, day by day, step by step.</p>
+                
+                <div class="quote">
+                    That's one strategy I can repeat over and over, allowing me to become very efficient and profitable. Using that process, I can scale up in size because I have the repetitions and the process in place.
+                </div>
+                
+                <p>For myself, I started implementing a routine back in 2019, and that was the turning point. It gave me purpose in trading the markets. I stopped being impulsive in my trading. I had a clear plan for which markets I was looking to trade. The transformation didn't happen overnight, but the consistency of following my process has made all the difference.</p>
+                
+                <a href="trading-journal.html" class="btn">Explore Trading Journal Templates</a>
             </section>
         </div>
     </main>
 
     <footer>
-        <!-- Footer content goes here -->
+        <div class="container">
+            <p>&copy; 2025 Art of the Trade. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="navigation-update.js"></script>
 </body>
 </html>
