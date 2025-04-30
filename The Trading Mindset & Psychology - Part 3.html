@@ -2,110 +2,89 @@
 <html lang="en">
 <head>
     <script src="https://dist.webbrain.app/webbrain-widget.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    WebBrain.init({
-      userId: "syYBWzZX03ejA6SiAioVTRL0BzU2" // Replace with your actual user ID
-    });
-  });
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            WebBrain.init({
+                userId: "syYBWzZX03ejA6SiAioVTRL0BzU2" // Replace with your actual user ID
+            });
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Mindset & Psychology - Art of the Trade</title>
+    <title>Trading Mindset & Psychology Part 3 - Art of the Trade</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .content-container {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 30px;
-        }
-
+        /* Additional styles for this page */
         .content-section {
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            padding: 50px;
             margin-bottom: 40px;
-            line-height: 1.7;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 25px;
         }
-
-        .content-section h1 {
-            color: var(--primary-color);
-            font-size: 2.8em;
-            margin-bottom: 35px;
-            border-bottom: 3px solid var(--accent-color);
-            padding-bottom: 20px;
-            font-weight: 700;
-        }
-
+        
         .content-section h2 {
             color: var(--primary-color);
-            font-size: 2em;
-            margin: 45px 0 25px;
-            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
         }
-
-        .content-section h3 {
-            color: var(--accent-color);
-            font-size: 1.5em;
-            margin: 35px 0 20px;
-            font-weight: 600;
-        }
-
+        
         .content-section p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .content-section ul, .content-section ol {
+            padding-left: 20px;
             margin-bottom: 20px;
-            color: #2c3e50;
-            font-size: 1.1em;
         }
-
-        .framework-box {
-            background: #f8fafc;
-            border-radius: 10px;
-            padding: 30px;
-            margin: 30px 0;
-            border-left: 4px solid var(--accent-color);
+        
+        .content-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
         }
-
-        .key-concept {
-            background: #f5f8ff;
-            border-left: 5px solid var(--primary-color);
-            margin: 30px 0;
-            padding: 30px;
+        
+        .key-points {
+            background-color: rgba(240, 240, 245, 0.7);
+            padding: 15px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
         }
-
-        .resources-section {
-            margin-top: 40px;
-            margin-bottom: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .resource-card {
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            padding: 35px;
-        }
-
-        .resource-card h3 {
+        
+        .key-point {
+            font-weight: 600;
             color: var(--primary-color);
-            margin-bottom: 20px;
         }
-
-        .resource-card .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: var(--primary-color);
-            color: white;
-            text-decoration: none;
+        
+        .highlight-box {
+            background-color: rgba(42, 65, 99, 0.1);
             border-radius: 6px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+            padding: 20px;
+            margin: 25px 0;
         }
-
+        
+        .highlight-box h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            padding: 15px 20px;
+            border-left: 3px solid var(--accent-color);
+            margin: 20px 0;
+            background-color: rgba(240, 240, 245, 0.7);
+        }
+        
+        .routine-section {
+            margin-bottom: 40px;
+        }
+        
         .navigation-links {
             display: flex;
             justify-content: space-between;
@@ -113,33 +92,26 @@
             padding-top: 20px;
             border-top: 1px solid #eee;
         }
-
+        
         .navigation-links a {
             display: inline-block;
-            padding: 12px 25px;
-            background: var(--primary-color);
+            padding: 10px 20px;
+            background-color: var(--primary-color);
             color: white;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 4px;
             transition: background-color 0.3s;
         }
-
-        @media (max-width: 768px) {
-            .content-container {
-                padding: 0 20px;
-            }
-
-            .content-section {
-                padding: 30px 25px;
-            }
-
-            .content-section h1 {
-                font-size: 2.2em;
-            }
-
-            .resources-section {
-                grid-template-columns: 1fr;
-            }
+        
+        .navigation-links a:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .framework-box {
+            background-color: rgba(240, 240, 245, 0.7);
+            padding: 15px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -147,35 +119,35 @@
     <header>
         <div class="container">
             <div class="logo"><a href="index.html">Art of the Trade</a></div>
-          <nav>
-    <ul class="main-nav">
-          <li class="has-dropdown">
-            <a href="#">Manual & Journal ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-manual.html">Trading Manual</a></li>
-                <li><a href="trading-journal.html">Trading Journal</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="futures.html">Futures ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-mindset.html">Trading Mindset</a></li>
-                <li><a href="risk-management.html">Risk Management</a></li>
-                <li><a href="technical-analysis.html">Technical Analysis</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="web3.html">Web3 ▾</a>
-            <ul class="dropdown">
-                <li><a href="dex-trading.html">DEX Trading</a></li>
-                <li><a href="trading-tools.html">Trading Tools</a></li>
-                <li><a href="web3-strategy.html">Web3 Strategy</a></li>
-            </ul>
-        </li>
-        <li><a href="market.html">Market</a></li>
-        <li><a href="resources.html">Resources</a></li>
-    </ul>
-</nav>
+            <nav>
+                <ul class="main-nav">
+                    <li class="has-dropdown">
+                        <a href="#">Manual & Journal ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-manual.html">Trading Manual</a></li>
+                            <li><a href="trading-journal.html">Trading Journal</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="futures.html">Futures ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="trading-mindset.html">Trading Mindset</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="technical-analysis.html">Technical Analysis</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="web3.html">Web3 ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="dex-trading.html">DEX Trading</a></li>
+                            <li><a href="trading-tools.html">Trading Tools</a></li>
+                            <li><a href="web3-strategy.html">Web3 Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button><i class="fas fa-search"></i></button>
@@ -184,37 +156,57 @@
     </header>
 
     <main>
-        <div class="content-container">
-            <div class="content-section">
-                <h1>The Trading Mindset & Psychology - Part 3</h1>
-                
+        <div class="container">
+            <!-- Hero section -->
+            <section class="hero">
+                <h1>Trading Mindset & Psychology - Part 3</h1>
+                <p>"Trading is more than just placing individual trades; being a trader means developing the right mindset, process, and discipline to perform consistently at a higher level"</p>
+            </section>
+            
+            <!-- Introduction -->
+            <section class="content-section">
+                <h2>Introduction</h2>
                 <p>When I first started trading, I honestly didn't have a mental framework. I didn't really appreciate the importance of mindset or how our emotions could impact our trading decisions. It wasn't until around 2021 that I really started working on this area, after watching some videos and reading books. People often think of mindset, psychology, and risk management as boring aspects of trading, and they can be. But once you appreciate them, you realize just how powerful and essential they are.</p>
                 
-                <p>In my six years of trading, I've spent the last three or four heavily emphasizing the mindset and mental aspect. I believe I have a technical edge, but what held me back in the past was my mental edge. Ultimately, <strong>you are your own edge</strong>. Trading success requires various forms of edges—technical, mental, emotional—all working collectively.</p>
-
+                <div class="highlight-box">
+                    <h3>Personal Evolution</h3>
+                    <p>In my six years of trading, I've spent the last three or four heavily emphasizing the mindset and mental aspect. I believe I have a technical edge, but what held me back in the past was my mental edge. Ultimately, <strong>you are your own edge</strong>. Trading success requires various forms of edges—technical, mental, emotional—all working collectively.</p>
+                </div>
+            </section>
+            
+            <!-- The Inchworm Concept -->
+            <section class="content-section">
                 <h2>The Inchworm Concept</h2>
                 
                 <p>I want to share a concept I picked up from Jared Tendler's book, "The Mental Game of Trading," which I highly recommend. It's called the Inchworm Concept. Think of how an inchworm moves: it stretches, anchors, pulls its body up, bends, anchors again, and stretches forward. This movement looks like a bell curve moving forward. The Inchworm Concept uses this idea to represent your progress as a trader.</p>
                 
                 <p>Your trading, every single facet of your performance over the last 6 to 12 months, can be captured or plotted on a distribution curve, like a bell curve. This curve represents who you are as a trader and your current ability. Within this, you have different levels of performance:</p>
                 
-                <ul>
-                    <li><p><strong>Your A-game:</strong> This is you at your absolute best. It doesn't happen very often, but when you are in your A-game, that's where your biggest wins occur.</p></li>
-                    <li><p><strong>Your B-game:</strong> This is your mediocre, average performance.</p></li>
-                    <li><p><strong>Your C-game:</strong> This is you at your worst. Your emotions are erratic, your technical skills aren't applied correctly, and you experience significant losses. These are the trades that really hurt, like a 20% loss instead of a small percentage.</p></li>
-                </ul>
-
-                <div class="key-concept">
-                    <h3>Moving Your Performance Forward</h3>
-                    <p>If you rated your trade decisions over the last 6 to 12 months, you'd see this natural bell curve distribution showing your strong and weak moments. There's a floor to how bad you are and a ceiling to how good you are. All your trades operate within this range based on your skills and experience. As an experienced trader, I can tell you that my C-game today is significantly better than my C-game from years ago.</p>
-                    
-                    <p>The goal with the Inchworm Concept is to move this bell curve forward. The only thing holding you back are your weaknesses. You need self-awareness to understand your emotions and mental weaknesses, as well as your strengths. As you grow, your current A-game will eventually replace your B-game, your B-game will replace your C-game, and the old C-game falls off the curve. Growth is a gradual process as your range shifts over time, refining your decision-making.</p>
-                    
-                    <p>However, the reality of trading distributions is that they often have fat tails or heavy tails. This means there's a higher probability of extreme outcomes (both positive and negative) than a normal distribution suggests. We see this often, especially in volatile markets, where accounts can blow up quickly during downturns. Ideally, you want to minimize your C-game, your losses. The ideal performance curve is a normal bell curve but skewed positively.</p>
+                <div class="routine-section">
+                    <h3>Performance Levels</h3>
+                    <ul>
+                        <li><strong>Your A-game:</strong> This is you at your absolute best. It doesn't happen very often, but when you are in your A-game, that's where your biggest wins occur.</li>
+                        <li><strong>Your B-game:</strong> This is your mediocre, average performance.</li>
+                        <li><strong>Your C-game:</strong> This is you at your worst. Your emotions are erratic, your technical skills aren't applied correctly, and you experience significant losses. These are the trades that really hurt, like a 20% loss instead of a small percentage.</li>
+                    </ul>
                 </div>
 
-                <hr>
-
+                <div class="key-points">
+                    <h3>Moving Your Performance Forward</h3>
+                    <p>If you rated your trade decisions over the last 6 to 12 months, you'd see this natural bell curve distribution showing your strong and weak moments. There's a floor to how bad you are and a ceiling to how good you are. All your trades operate within this range based on your skills and experience. As an experienced trader, I can tell you that my C-game today is significantly better than my C-game from years ago.</p>
+                </div>
+                
+                <p>The goal with the Inchworm Concept is to move this bell curve forward. The only thing holding you back are your weaknesses. You need self-awareness to understand your emotions and mental weaknesses, as well as your strengths. As you grow, your current A-game will eventually replace your B-game, your B-game will replace your C-game, and the old C-game falls off the curve. Growth is a gradual process as your range shifts over time, refining your decision-making.</p>
+                
+                <div class="quote">
+                    <p>However, the reality of trading distributions is that they often have fat tails or heavy tails. This means there's a higher probability of extreme outcomes (both positive and negative) than a normal distribution suggests. We see this often, especially in volatile markets, where accounts can blow up quickly during downturns.</p>
+                </div>
+                
+                <p>Ideally, you want to minimize your C-game, your losses. The ideal performance curve is a normal bell curve but skewed positively.</p>
+            </section>
+            
+            <!-- The Performance Process Cycle -->
+            <section class="content-section">
                 <h2>The Performance Process Cycle</h2>
                 
                 <p>So, how is any of this practical? We need to think about applying it through a framework. Trading has two fundamental parts: the tactical game and the mental game.</p>
@@ -225,10 +217,21 @@
                         <li><strong>The tactical game</strong> is your technical analysis, your discretionary skills, price action, orderflow, strategies – everything you learn about the market itself. This is the outer game, played against the external opponent (the market).</li>
                         <li><strong>The mental game</strong> is what takes place in your mind – overcoming the habits that inhibit excellent performance. This is the inner game.</li>
                     </ul>
-                    <p>You really need to think about what your A-game, B-game, and C-game look like from both a mental and tactical perspective.</p>
+                </div>
+                
+                <p>You really need to think about what your A-game, B-game, and C-game look like from both a mental and tactical perspective.</p>
+                
+                <div class="routine-section">
+                    <h3>Mental Performance Characteristics</h3>
                     <ul>
                         <li>Mentally in your A-game, you're confident, relaxed, patient with purpose.</li>
                         <li>Mentally in your C-game, you're distracted, emotionally on edge, trading your P&L, impulsive, doubting yourself. These emotions are heightened particularly during trade execution and management.</li>
+                    </ul>
+                </div>
+                
+                <div class="routine-section">
+                    <h3>Tactical Performance Characteristics</h3>
+                    <ul>
                         <li>Tactically in your A-game, you have a clear understanding of context, you let price come to you, you know your strategy well.</li>
                         <li>Tactically in your C-game, you're chasing price, making impulsive decisions, maybe even trading off a mobile phone.</li>
                     </ul>
@@ -238,54 +241,68 @@
                 
                 <p>The Performance Process has four quadrants, representing the trade life cycle:</p>
 
-                <h4><strong>1. The Being Phase (Reset)</strong></h4>
-                <p>This is the foundational stage emphasizing self-awareness and mental preparation. You focus on achieving an optimal state, like being "in the zone" or "in flow". Pre-trade conditions and morning checklists help you get into this phase.</p>
-
-                <h4><strong>2. The Production Phase (Trigger)</strong></h4>
-                <p>Here, you analyze, plan, and strategize your trades. This involves thorough preparation, understanding market conditions, and developing a sound trading plan before taking risks. You're planning your trades for the day, checking news, and knowing what levels you're interested in.</p>
-
-                <h4><strong>3. The Performance Phase (Act)</strong></h4>
-                <p>This is the active engagement with the markets. It's where you execute your strategies, manage your trades, and navigate risk. This is the core of your trading, where your mental and tactical games come together. At the end of this phase, there's an outcome: a win, break-even, or loss.</p>
-
-                <h4><strong>4. The Letting Go Phase (Outcome/Reset)</strong></h4>
-                <p>This is the final crucial phase where you must have a release. You mentally disengage from the market and the trade. You accept the results, whether positive or negative, and reset for future opportunities. This is incredibly important because failing to let go carries emotional baggage (overconfidence from a win, fear/hesitation from losses) into your next trade, impacting your decision-making. You need to repeat the process you've established.</p>
+                <div class="highlight-box">
+                    <h3>The Four Phases of Trading</h3>
+                    <ol>
+                        <li><strong>The Being Phase (Reset)</strong> - This is the foundational stage emphasizing self-awareness and mental preparation. You focus on achieving an optimal state, like being "in the zone" or "in flow". Pre-trade conditions and morning checklists help you get into this phase.</li>
+                        <li><strong>The Production Phase (Trigger)</strong> - Here, you analyze, plan, and strategize your trades. This involves thorough preparation, understanding market conditions, and developing a sound trading plan before taking risks. You're planning your trades for the day, checking news, and knowing what levels you're interested in.</li>
+                        <li><strong>The Performance Phase (Act)</strong> - This is the active engagement with the markets. It's where you execute your strategies, manage your trades, and navigate risk. This is the core of your trading, where your mental and tactical games come together. At the end of this phase, there's an outcome: a win, break-even, or loss.</li>
+                        <li><strong>The Letting Go Phase (Outcome/Reset)</strong> - This is the final crucial phase where you must have a release. You mentally disengage from the market and the trade. You accept the results, whether positive or negative, and reset for future opportunities.</li>
+                    </ol>
+                </div>
                 
-                <p>Think of it like a sport. A football team in the locker room is the being phase. Going over tactics and strategy is the production phase. The 90 minutes on the pitch is the performance phase. The debriefing and moving on is the letting go phase.</p>
+                <div class="quote">
+                    <p>Think of it like a sport. A football team in the locker room is the being phase. Going over tactics and strategy is the production phase. The 90 minutes on the pitch is the performance phase. The debriefing and moving on is the letting go phase.</p>
+                </div>
+                
+                <p>This is incredibly important because failing to let go carries emotional baggage (overconfidence from a win, fear/hesitation from losses) into your next trade, impacting your decision-making. You need to repeat the process you've established.</p>
                 
                 <p>This cycle can be viewed as a series of waves. A healthy completion of one cycle leads into the next wave. Reset → Being → Production → Performance → Letting Go → Reset. This is what you strive for.</p>
-
-                <hr>
-
+            </section>
+            
+            <!-- The Trader's Death Spiral -->
+            <section class="content-section">
                 <h2>The Trader's Death Spiral</h2>
                 
-                <p>What happens if you don't follow this process, particularly failing to let go and reset? You enter what's known as a Trader's Death Spiral. This is where your account erodes, you lose emotional control, ego takes over, impulses dominate, and you short-circuit the entire process. You act without resetting, being, or planning. We've all done it. Failing to let go leads to declining performance. You can experience significant drawdowns.</p>
+                <div class="key-points">
+                    <p>What happens if you don't follow this process, particularly failing to let go and reset? You enter what's known as a Trader's Death Spiral. This is where your account erodes, you lose emotional control, ego takes over, impulses dominate, and you short-circuit the entire process. You act without resetting, being, or planning. We've all done it. Failing to let go leads to declining performance. You can experience significant drawdowns.</p>
+                </div>
                 
                 <p>However, being self-aware is key. Even if you fail to follow the process sometimes, recognizing it allows you to bring yourself back on track. Resetting after a lapse is crucial for recovery. The market is ruthless; it tries to keep you trapped and messes with your head and emotions. Having physical and mental closure, appreciating the danger of holding onto past trades emotionally, and actively letting go are paramount. Letting go is truly one of your power zones.</p>
-
-                <h3>Tools for Self-Mastery and Application</h3>
+            </section>
+            
+            <!-- Tools for Self-Mastery and Application -->
+            <section class="content-section">
+                <h2>Tools for Self-Mastery and Application</h2>
                 
                 <p>As practical steps, I highly recommend creating a trading manual or a dedicated mindset/psychology document. Part one could cover your mission, goals, strengths, and weaknesses; part two incorporates your mental framework and self-reflection. This should be a living document that evolves. I review mine at least once a month to stay reminded of the importance of the mental game. I strongly advise you to create your own document. Copying mine won't help you understand yourself. Spend time developing your own; it takes months to see a positive impact.</p>
                 
-                <ul>
-                    <li><strong>Emotional Tracking Sheets:</strong> One sheet is for tracking emotions during the trade, especially during execution and management when emotions are heightened. You note the emotion type (fear, greed, impulsiveness), the specific emotion, the trigger, your thoughts, physical behavior, and response behavior. Screen recording and talking through your trades can be very helpful here.</li>
-                    <li><strong>Mental Mindset Development Sheet:</strong> This is for reflection after the trade, during the letting go phase. You use this to identify recurring emotional problems, explain why you react that way, challenge the issue, plan for improvement, and outline a future approach. These tools help you identify patterns and adjust your approach.</li>
-                </ul>
-
-                <p>By combining the Inchworm Concept (understanding your A-C game and aiming for gradual shift) with the Performance Process Cycle (the trade life cycle framework), you create a robust framework for trading. It's about being present, mindful, self-aware, and understanding your motivations.</p>
+                <div class="routine-section">
+                    <h3>Essential Trading Tools</h3>
+                    <ul>
+                        <li><strong>Emotional Tracking Sheets:</strong> One sheet is for tracking emotions during the trade, especially during execution and management when emotions are heightened. You note the emotion type (fear, greed, impulsiveness), the specific emotion, the trigger, your thoughts, physical behavior, and response behavior. Screen recording and talking through your trades can be very helpful here.</li>
+                        <li><strong>Mental Mindset Development Sheet:</strong> This is for reflection after the trade, during the letting go phase. You use this to identify recurring emotional problems, explain why you react that way, challenge the issue, plan for improvement, and outline a future approach. These tools help you identify patterns and adjust your approach.</li>
+                    </ul>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Creating A Comprehensive Framework</h3>
+                    <p>By combining the Inchworm Concept (understanding your A-C game and aiming for gradual shift) with the Performance Process Cycle (the trade life cycle framework), you create a robust framework for trading. It's about being present, mindful, self-aware, and understanding your motivations.</p>
+                </div>
                 
                 <p>This isn't going to change overnight or even in six months. Becoming a skilled trader, like becoming an elite athlete, requires dedication and consistent effort. If you take shortcuts in your process or mental game, you won't achieve your desired outcomes.</p>
                 
-                <p>So, the key tasks are to understand key concepts like expectancy, objectivity, uncertainty, and randomness. Map out your own mental and tactical A, B, and C games (starting with five points each). Understand and reflect on the Performance Process cycle and how it fits into your trading. Critically, understand the importance of the letting go phase and the danger of the trader's death spiral. Work all of this into your trading manual. And start using the emotional tracking sheets consistently for every trade to build self-awareness.</p>
+                <div class="key-points">
+                    <p>So, the key tasks are to understand key concepts like expectancy, objectivity, uncertainty, and randomness. Map out your own mental and tactical A, B, and C games (starting with five points each). Understand and reflect on the Performance Process cycle and how it fits into your trading. Critically, understand the importance of the letting go phase and the danger of the trader's death spiral. Work all of this into your trading manual. And start using the emotional tracking sheets consistently for every trade to build self-awareness.</p>
+                </div>
                 
                 <p>This segment on mindset and psychology is long, but it's foundational for your future trading success.</p>
-            </div>
-
+                
+                <div class="navigation-links">
+                    <a href="The Trading Mindset & Psychology - Part 2.html">← Previous Part</a>
+                    <a href="risk-management.html">Next: Risk Management →</a>
+                </div>
             </section>
-
-            <div class="navigation-links">
-                <a href="The Trading Mindset & Psychology - Part 2.html">← Previous Part</a>
-                <a href="risk-management.html">Next: Risk Management →</a>
-            </div>
         </div>
     </main>
 
