@@ -69,41 +69,57 @@
             color: var(--primary-color);
             margin-bottom: 10px;
         }
+
+        /* Navigation styles */
+        .nav-menu .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu .has-dropdown {
+            position: relative;
+        }
+
+        .nav-menu .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        .nav-menu .has-dropdown:hover .dropdown {
+            display: block;
+        }
+
+        .nav-menu .dropdown li {
+            display: block;
+        }
+
+        .nav-menu .dropdown a {
+            padding: 10px 15px;
+            display: block;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-menu .dropdown a:hover {
+            background: #f5f5f5;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo"><a href="index.html">Art of the Trade</a></div>
-          <nav>
-    <ul class="main-nav">
-          <li class="has-dropdown">
-            <a href="#">Manual & Journal ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-manual.html">Trading Manual</a></li>
-                <li><a href="trading-journal.html">Trading Journal</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="futures.html">Futures ▾</a>
-            <ul class="dropdown">
-                <li><a href="trading-mindset.html">Trading Mindset</a></li>
-                <li><a href="risk-management.html">Risk Management</a></li>
-                <li><a href="technical-analysis.html">Technical Analysis</a></li>
-            </ul>
-        </li>
-        <li class="has-dropdown">
-            <a href="web3.html">Web3 ▾</a>
-            <ul class="dropdown">
-                <li><a href="dex-trading.html">DEX Trading</a></li>
-                <li><a href="trading-tools.html">Trading Tools</a></li>
-                <li><a href="web3-strategy.html">Web3 Strategy</a></li>
-            </ul>
-        </li>
-        <li><a href="market.html">Market</a></li>
-        <li><a href="resources.html">Resources</a></li>
-    </ul>
-</nav>
+            <nav class="nav-menu">
+                <!-- Navigation will be injected by navigation-update.js -->
+            </nav>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button><i class="fas fa-search"></i></button>
@@ -243,6 +259,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="navigation-update.js"></script>
+    <script src="js/navigation-update.js"></script>
 </body>
 </html>

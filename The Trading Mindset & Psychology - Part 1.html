@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <script src="https://dist.webbrain.app/webbrain-widget.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    WebBrain.init({
-      userId: "syYBWzZX03ejA6SiAioVTRL0BzU2" // Replace with your actual user ID
-    });
-  });
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            WebBrain.init({
+                userId: "syYBWzZX03ejA6SiAioVTRL0BzU2" // Replace with your actual user ID
+            });
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading Mindset & Psychology - Art of the Trade</title>
@@ -16,162 +16,109 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Additional styles for the trading mindset page */
-        .mindset-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+        .content-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 30px;
         }
-        
-        .mindset-section {
+
+        .content-section {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 50px;
             margin-bottom: 40px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 25px;
+            line-height: 1.7;
         }
-        
-        .mindset-section h2 {
+
+        .content-section h1 {
             color: var(--primary-color);
-            margin-top: 0;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
+            font-size: 2.8em;
+            margin-bottom: 35px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 20px;
+            font-weight: 700;
         }
-        
-        .mindset-section h3 {
+
+        .content-section h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin: 45px 0 25px;
+            font-weight: 600;
+        }
+
+        .content-section h3 {
             color: var(--accent-color);
-            margin: 25px 0 15px;
+            font-size: 1.5em;
+            margin: 35px 0 20px;
+            font-weight: 600;
         }
-        
-        .emotion-list {
-            list-style-type: none;
-            padding: 0;
+
+        .content-section p {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.1em;
         }
-        
-        .emotion-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        .emotion-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .emotion-list li strong {
-            color: var(--accent-color);
-            display: inline-block;
-            width: 120px;
-        }
-        
-        .exercise-box {
-            background-color: #f9f9f9;
-            border-left: 4px solid var(--primary-color);
-            padding: 20px;
+
+        .content-section ul, .content-section ol {
             margin: 25px 0;
-        }
-        
-        .exercise-box h3 {
-            margin-top: 0;
-        }
-        
-        .exercise-steps {
-            counter-reset: step-counter;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        
-        .exercise-steps li {
-            counter-increment: step-counter;
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .exercise-steps li::before {
-            content: counter(step-counter);
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: bold;
-            font-size: 12px;
-            border-radius: 50%;
-            position: absolute;
-            left: 0;
-            top: 2px;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-        }
-        
-        .quote-box {
-            font-style: italic;
-            padding: 15px 20px;
-            background-color: #f0f8ff;
-            border-radius: 5px;
-            margin: 20px 0;
-            position: relative;
-        }
-        
-        .quote-box::before {
-            content: """;
-            font-size: 60px;
-            color: rgba(0,0,0,0.1);
-            position: absolute;
-            left: 10px;
-            top: -10px;
-        }
-        
-        .quote-box p {
-            margin: 0;
             padding-left: 25px;
         }
-        
-        .failure-reasons {
-            list-style-type: none;
-            counter-reset: failure-counter;
-            padding-left: 0;
+
+        .content-section li {
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-size: 1.1em;
         }
-        
-        .failure-reasons li {
-            counter-increment: failure-counter;
-            margin-bottom: 20px;
-            padding-left: 40px;
-            position: relative;
+
+        .emotion-list {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 4px solid var(--accent-color);
         }
-        
-        .failure-reasons li::before {
-            content: counter(failure-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: var(--accent-color);
-            color: white;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 28px;
-            font-weight: bold;
+
+        .quote-box {
+            background: #f5f8ff;
+            border-left: 5px solid var(--primary-color);
+            margin: 30px 0;
+            padding: 30px;
+            font-style: italic;
         }
-        
+
+        .exercise-box {
+            background: #f9f9f9;
+            border: 2px solid #eef2f7;
+            border-radius: 10px;
+            padding: 35px;
+            margin: 40px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
         .failure-reasons h4 {
-            margin: 0 0 10px 0;
             color: var(--primary-color);
+            font-size: 1.3em;
+            margin: 25px 0 15px;
+            font-weight: 600;
         }
-        
+
         @media (max-width: 768px) {
-            .mindset-container {
-                padding: 15px;
+            .content-container {
+                padding: 0 20px;
+                margin: 30px auto;
             }
-            
-            .mindset-section {
-                padding: 15px;
+
+            .content-section {
+                padding: 30px;
             }
-            
-            .emotion-list li strong {
-                display: block;
-                width: 100%;
-                margin-bottom: 5px;
+
+            .content-section h1 {
+                font-size: 2.2em;
+            }
+
+            .content-section h2 {
+                font-size: 1.8em;
             }
         }
     </style>
@@ -217,8 +164,8 @@
     </header>
 
     <main>
-        <div class="mindset-container">
-            <div class="mindset-section">
+        <div class="content-container">
+            <div class="content-section">
                 <h1>Trading Mindset & Psychology</h1>
                 <p>This section on mindset and psychology is detailed and important because without a solid mental foundation, no strategy will succeed. Think about that for a moment.</p>
                 
@@ -227,9 +174,9 @@
                 </div>
             </div>
             
-            <div class="mindset-section">
+            <div class="content-section">
                 <h2>The Overlooked Foundation: Mindset and Psychology</h2>
-                <p>I can speak from experience that when I first started trading in 2016, for about four years until the end of 2020, I was heavily reliant on technical analysis. I was seeing some results and some consistency, but every now and then, I noticed I was making many mistakes. Deep down, I thought the issues were with my technical ability, maybe my inability to read price effectively.</p>
+                <p>I can speak from experience that when I first started trading in 2018, and even until not long ago, I was heavily reliant on technical analysis and market sentiment. I was seeing some results and some consistency, but every now and then, I noticed I was making many mistakes. Deep down, I thought the issues were with my technical ability, maybe my inability to read price effectively.</p>
                 
                 <p>However, when I really looked beneath the surface, I later understood that many of the mistakes I made were not because of the technical setup or my inability to read price; they were purely driven by emotions. My emotions were holding me back from developing further in my own trading career.</p>
                 
@@ -249,7 +196,7 @@
                 <p><strong>We can conclude that technical skills matter, but without the right mindset, success is impossible. It doesn't matter what system you trade. I could give you a winning strategy that's performing well, making monthly returns, with a good profit factor and expectancy. If you don't have the ability to handle your mindset and the emotions of trading, then no matter how effective a strategy might be for someone else, it won't make any difference to you. That's the reality, and we have to accept that.</strong></p>
             </div>
             
-            <div class="mindset-section">
+            <div class="content-section">
                 <h2>Why Most Traders Fail: Psychological Pitfalls</h2>
                 <p>Here are five reasons why most traders fail:</p>
                 
@@ -271,7 +218,7 @@
                     
                     <li>
                         <h4>Ego-Driven Decisions</h4>
-                        <p>This is probably the biggest one for me. I've been there; when I was successfully shorting the bear market, I let my ego get to me due to overconfidence. My ego and personal pride started influencing my decisions. Ego-driven decisions can also manifest as refusing to cut a losing position. How often have we been significantly offside in a trade but refused to cut it, hoping it will turn around because our ego is getting in the way of rational thought? We hold on because we don't want to take the loss, hoping for break-even, only for price to blow through support levels.</p>
+                        <p>This is probably the biggest one for most, including me. I've been there; when I successfully ride the market trend within few days after trading cryptocurrency, when was successfully shorting the bear market, I let my ego get to me due to overconfidence. My ego and personal pride started influencing my decisions. Ego-driven decisions can also manifest as refusing to cut a losing position. How often have we been significantly offside in a trade but refused to cut it, hoping it will turn around because our ego is getting in the way of rational thought? We hold on because we don't want to take the loss, hoping for break-even, only for price to blow through support levels.</p>
                     </li>
                     
                     <li>
@@ -292,7 +239,7 @@
                 <p>Maybe we're overloading on information, jumping between order flow, market profile, data like open interest or CVD, trying to find an edge without enough sample size or a quantifiable strategy. We're constantly tweaking our system, but perhaps the system isn't the issue. As I said, someone could give us a winning strategy, but do we have the mental capacity, ability, psychology, and mindset to execute it? Only a small subset can trade for a living using these concepts.</p>
             </div>
             
-            <div class="mindset-section">
+            <div class="content-section">
                 <h2>The Role of Biology and Understanding Emotions</h2>
                 <p>Let's look at who we are as human traders – the role of biology in trading. Trading success isn't solely about skill; human biology plays a significant role in our decision-making. Our brains' natural wiring often works against us in those high-pressure trading environments. The same instincts that evolved for survival can cause emotional reactions that hurt trading performance.</p>
                 
@@ -320,9 +267,9 @@
                 <p>I'm sure these emotions are relatable during trade execution or management. Each emotion acts as a trigger. Fear can lead to exiting too early or failing to execute. Impatience can lead to entering too early. I urge you to consider how many you've experienced and if they're preventing you from becoming the trader you strive to be.</p>
             </div>
             
-            <div class="mindset-section">
+            <div class="content-section">
                 <h2>Working With Emotions: The Path to Self-Mastery</h2>
-                <p>To move forward, what do we traders generally perceive will help us improve? It's often easy phrases thrown around like needing to be more consistent, having more determination, working harder, being smarter, or journaling more frequently. These were some of my thoughts back in 2020/2021. But really, all these are quite flawed. What does "consistent" actually mean? What does "better determination" mean?</p>
+                <p>To move forward, what do we traders generally perceive will help us improve? It's often easy phrases thrown around like needing to be more consistent, having more determination, working harder, being smarter, or journaling more frequently. These were some of my thoughts back in 2019/2020. But really, all these are quite flawed. What does "consistent" actually mean? What does "better determination" mean?</p>
                 
                 <p>Working harder, being stricter, journaling more frequently – none of these truly resolve the underlying issues, which are your emotions, your mindset. We need to work with them, not resolve them by creating rules to suppress them, because temporary fixes eventually fail. Despite good intentions, these approaches won't help until we understand ourselves, our mindset, and our emotions, and have a mental framework along with the trading process.</p>
                 
@@ -336,21 +283,21 @@
                 <p>Emotional control is about how we manage our response to emotions, not suppressing them. This is crucial to understand. Only through experience and working on your mental game will you reach a level where you work with your emotions, being fully aware during times of stress. Emotions can overwhelm us. When intense, they can hijack our decision-making process, making control difficult, regardless of effort. We have to accept this; we won't become immune. Sometimes emotions will be heightened, other times subdued. The power of emotion can shut down control, especially in high-stress situations. Fear, greed, and frustration can override logical thinking.</p>
                 
                 <h3>Finding the Optimal Balance</h3>
-                <p>Applying the concept related to the Yerkes-Dodson law, there's an ideal level of emotional arousal for peak performance. Too little emotion (fatigue, disengagement) results in poor decision-making. Too much emotion can overwhelm cognitive function. We aim for that balanced level of using our emotions for peak performance.</p>
+                <p>Applying the concept related to <a href="https://en.wikipedia.org/wiki/Yerkes%E2%80%93Dodson_law">the Yerkes-Dodson law</a>, there's an ideal level of emotional arousal for peak performance. Too little emotion (fatigue, disengagement) results in poor decision-making. Too much emotion can overwhelm cognitive function. We aim for that balanced level of using our emotions for peak performance.</p>
                 
                 <p>Understanding your emotional threshold is key – that tipping point where emotions impair clear thinking and rational decisions. Recognizing when you're approaching this threshold is essential for maintaining performance. This requires a great deal of self-awareness. When emotions rise too high, the prefrontal cortex, responsible for emotional control and critical thinking, weakens, leading to impulsive decision-making and a decline in ability. This affects trading performance because emotions are out of control. Recognizing emotional overload early is crucial. Signs can be physical, like biting nails, tapping feet, or fidgeting.</p>
                 
                 <p>Maintaining the right emotional balance is important. Finding and maintaining the optimal emotional level keeps your brain engaged and focused, helping make better trading decisions, think with clarity, and avoid poor trades.</p>
                 
                 <h3>Emotions as Signals</h3>
-                <p>So, emotions can cause problems, but maybe we just need to interpret what they mean. Over my nine years of trading, I've heavily emphasized how emotions can fuel performance. Emotions are essential for reaching peak performance and provide the energy needed for success.</p>
+                <p>So, emotions can cause problems, but maybe we just need to interpret what they mean. Over my six years of trading, I've heavily emphasized how emotions can fuel performance. Emotions are essential for reaching peak performance and provide the energy needed for success.</p>
                 
                 <p>Even negative emotions like anger and fear can be useful, like how elite athletes use criticism to fuel their success. Maybe criticism from others fuels us to prove them wrong, not just to them, but to ourselves, driving us to become the best version of ourselves. Control and mastery of emotions are essential to optimize performance. Elite performers have amazing emotional balance. I've strived for this. Having emotions in check makes you much better at handling high-pressure trading environments.</p>
                 
                 <p>Emotional balance is critical for long-term success. It's like navigating a boat in rough seas or a surfer on a surfboard during an adrenaline rush – requiring balance, the ability to think calmly, maneuver, and ride the flow. Trading is very similar; we need to ride the flow and rhythm of the markets, manage our emotions with that rhythm to think in a balanced, humbled, open way about trading. Stable emotions lead to better performance, making it easier to get into the zone (optimal trade zone) to improve performance and reduce mistakes.</p>
             </div>
             
-            <div class="mindset-section">
+            <div class="content-section">
                 <h2>Building the Foundation: Mental Framework, Risk Management, and Process</h2>
                 <p>To summarize everything we've covered: Ultimately, mastering emotions is key for trading performance. In trading, emotions are often triggered by external events like market movements, losses, or wins. These emotional responses lead to impulsive actions, such as chasing trades or overreacting to losses, which detrimentally impacts our trading ability. Recognizing what stimuli trigger these emotional reactions and understanding them is crucial to managing impulses. When they happen repeatedly, we can eventually work with our emotions and become aware of them.</p>
                 

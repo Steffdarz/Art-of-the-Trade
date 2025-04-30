@@ -16,141 +16,130 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Additional styles for the market preview */
-        .chart-preview {
-            height: auto;
-            overflow: hidden;
-            border-radius: 5px 5px 0 0;
-            position: relative;
+        .content-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 30px;
         }
-        
-        .chart-preview img {
-            width: 100%;
-            height: auto;
-            display: block;
+
+        .content-section {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 50px;
+            margin-bottom: 40px;
+            line-height: 1.7;
         }
-        
-        .chart-preview .no-bueno {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            background-color: rgba(220, 53, 69, 0.8);
-            color: white;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
-            font-style: italic;
-        }
-        
-        .market-preview-content {
-            padding: 15px;
-        }
-        
-        .market-preview-content h3 {
-            margin-top: 0;
+
+        .content-section h1 {
             color: var(--primary-color);
+            font-size: 2.8em;
+            margin-bottom: 35px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 20px;
+            font-weight: 700;
         }
-        
-        .market-preview-content p {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        
-        .market-date {
-            font-size: 12px;
-            color: var(--light-text);
-            margin-bottom: 10px;
-            display: block;
-        }
-        
-        .price-preview {
-            font-weight: bold;
+
+        .content-section h2 {
             color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        /* Additional styles for the article content */
-        .article-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .article-content h1 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        .article-content h2 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-
-        .article-content h3 {
-            color: var(--dark-text);
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        .article-content h4 {
+            font-size: 2em;
+            margin: 45px 0 25px;
             font-weight: 600;
-            margin-top: 20px;
-            margin-bottom: 10px;
         }
 
-        .article-content p {
-            margin-bottom: 15px;
-            line-height: 1.6;
+        .content-section h3 {
+            color: var(--accent-color);
+            font-size: 1.5em;
+            margin: 35px 0 20px;
+            font-weight: 600;
         }
 
-        .article-content ul {
+        .content-section p {
             margin-bottom: 20px;
-            padding-left: 20px;
-        }
-
-        .article-content li {
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-
-        .article-content hr {
-            margin: 30px 0;
-            border: 0;
-            height: 1px;
-            background-color: #eee;
+            color: #2c3e50;
+            font-size: 1.1em;
         }
 
         .framework-box {
-            background-color: #f8f9fa;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 5px 5px 0;
-        }
-
-        .framework-box h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-        }
-
-        .framework-box ul {
-            margin-bottom: 0;
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 4px solid var(--accent-color);
         }
 
         .key-concept {
-            background-color: rgba(var(--primary-color-rgb), 0.1);
-            border-radius: 5px;
-            padding: 15px 20px;
-            margin: 20px 0;
+            background: #f5f8ff;
+            border-left: 5px solid var(--primary-color);
+            margin: 30px 0;
+            padding: 30px;
         }
 
-        .key-concept h3 {
-            margin-top: 0;
+        .resources-section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .resource-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 35px;
+        }
+
+        .resource-card h3 {
             color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .resource-card .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .navigation-links a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                padding: 0 20px;
+            }
+
+            .content-section {
+                padding: 30px 25px;
+            }
+
+            .content-section h1 {
+                font-size: 2.2em;
+            }
+
+            .resources-section {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -195,13 +184,13 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="article-content">
+        <div class="content-container">
+            <div class="content-section">
                 <h1>The Trading Mindset & Psychology - Part 3</h1>
                 
                 <p>When I first started trading, I honestly didn't have a mental framework. I didn't really appreciate the importance of mindset or how our emotions could impact our trading decisions. It wasn't until around 2021 that I really started working on this area, after watching some videos and reading books. People often think of mindset, psychology, and risk management as boring aspects of trading, and they can be. But once you appreciate them, you realize just how powerful and essential they are.</p>
                 
-                <p>In my nine years of trading, I've spent the last three or four heavily emphasizing the mindset and mental aspect. I believe I have a technical edge, but what held me back in the past was my mental edge. Ultimately, <strong>you are your own edge</strong>. Trading success requires various forms of edges—technical, mental, emotional—all working collectively.</p>
+                <p>In my six years of trading, I've spent the last three or four heavily emphasizing the mindset and mental aspect. I believe I have a technical edge, but what held me back in the past was my mental edge. Ultimately, <strong>you are your own edge</strong>. Trading success requires various forms of edges—technical, mental, emotional—all working collectively.</p>
 
                 <h2>The Inchworm Concept</h2>
                 
@@ -291,41 +280,12 @@
                 <p>This segment on mindset and psychology is long, but it's foundational for your future trading success.</p>
             </div>
 
-            <!-- Additional resources section -->
-            <section class="split-section">
-                <div class="market-overview">
-                    <h2>Recommended Resources</h2>
-                    <div class="overview-card">
-                        <div class="market-preview-content">
-                            <h3>Further Reading</h3>
-                            <ul>
-                                <li>"The Mental Game of Trading" by Jared Tendler</li>
-                                <li>"Mastering the Mental Game of Trading" by Steven Goldstein</li>
-                                <li>Alphamind YouTube channel</li>
-                                <li>Chat with Traders YouTube channel</li>
-                            </ul>
-                            <a href="resources.html" class="btn">More Resources</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="web3-section">
-                    <div class="web3-card">
-                        <div class="web3-header">
-                            <h2>Trading Manual Template</h2>
-                        </div>
-                        <div class="web3-content">
-                            <p>Create your own trading manual incorporating the concepts from this article:</p>
-                            <ul>
-                                <li>Personal A/B/C-game analysis</li>
-                                <li>Performance Process implementation</li>
-                                <li>Mind Sheet & Tracker templates</li>
-                            </ul>
-                            <a href="trading-manual.html" class="btn web3-btn">Download</a>
-                        </div>
-                    </div>
-                </div>
             </section>
+
+            <div class="navigation-links">
+                <a href="The Trading Mindset & Psychology - Part 2.html">← Previous Part</a>
+                <a href="risk-management.html">Next: Risk Management →</a>
+            </div>
         </div>
     </main>
 
